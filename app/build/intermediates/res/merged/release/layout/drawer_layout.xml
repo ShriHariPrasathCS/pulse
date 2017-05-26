@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawer_menu_selector"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/homeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/twenty_dp"
+                android:background="@drawable/button_effect">
+
+                <com.armor.fontlib.CTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dashboard"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    app:fontName="@string/MyriadPro_Semibold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_trans" />
+
+            <LinearLayout
+                android:id="@+id/myAccLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/twenty_dp"
+                android:background="@drawable/button_effect">
+
+                <com.armor.fontlib.CTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_account"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    app:fontName="@string/MyriadPro_Semibold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_trans" />
+
+            <LinearLayout
+                android:id="@+id/orderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/twenty_dp"
+                android:background="@drawable/button_effect">
+
+                <com.armor.fontlib.CTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawer_menu_selector"
+                    android:text="@string/order_history"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    app:fontName="@string/MyriadPro_Semibold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_trans" />
+
+            <LinearLayout
+                android:id="@+id/promoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/twenty_dp"
+                android:background="@drawable/button_effect">
+
+                <com.armor.fontlib.CTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawer_menu_selector"
+                    android:text="@string/promotion"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    app:fontName="@string/MyriadPro_Semibold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_trans" />
+
+            <LinearLayout
+                android:id="@+id/aboutLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/twenty_dp"
+                android:background="@drawable/button_effect">
+
+
+                <com.armor.fontlib.CTextView
+                    android:id="@+id/radio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_sp"
+                    app:fontName="@string/MyriadPro_Semibold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_trans" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/button_effect">
+
+                <LinearLayout
+                    android:id="@+id/help_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_effect">
+
+                    <com.armor.fontlib.CTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/twenty_dp"
+                        android:paddingEnd="2dp"
+                        android:paddingLeft="@dimen/twenty_dp"
+                        android:paddingRight="2dp"
+                        android:paddingStart="@dimen/twenty_dp"
+                        android:paddingTop="@dimen/twenty_dp"
+                        android:text="@string/help"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eighteen_sp"
+                        app:fontName="@string/MyriadPro_Semibold" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/img_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/left" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/img_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/down" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/subhelp_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.armor.fontlib.CTextView
+                        android:id="@+id/txt_faq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/button_effect"
+                        android:button="@null"
+                        android:drawablePadding="@dimen/five_dp"
+                        android:paddingBottom="@dimen/ten_dp"
+                        android:paddingEnd="0dp"
+                        android:paddingLeft="60dp"
+                        android:paddingRight="0dp"
+                        android:paddingStart="60dp"
+                        android:text="@string/faq"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eighteen_sp"
+                        app:fontName="@string/MyriadPro_Regular" />
+
+
+                    <com.armor.fontlib.CTextView
+                        android:id="@+id/txt_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/button_effect"
+                        android:paddingBottom="@dimen/ten_dp"
+                        android:paddingEnd="0dp"
+                        android:paddingLeft="60dp"
+                        android:paddingRight="0dp"
+                        android:paddingStart="60dp"
+                        android:text="@string/contact_us"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eighteen_sp"
+                        app:fontName="@string/MyriadPro_Regular" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_trans" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

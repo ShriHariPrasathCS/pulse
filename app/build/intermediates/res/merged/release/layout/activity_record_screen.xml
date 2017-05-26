@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.35"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/reyLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty_dp">
+
+           <!-- <android.support.v7.widget.AppCompatImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_out_circle_shape"
+                android:contentDescription="@string/app_name" />-->
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_circle"
+                android:contentDescription="@string/app_name" />
+
+            <!-- <com.devadvance.circularseekbar.CircularSeekBar
+                 android:id="@+id/circularSeekBar1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />-->
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgPlay"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/ten_dp"
+                app:srcCompat="@drawable/play_white" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgRecord"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:visibility="visible"
+                android:padding="@dimen/ten_dp"
+                app:srcCompat="@drawable/img_mic" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgPauseMe"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                app:srcCompat="@drawable/pause_white" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgPlayGrey"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:visibility="gone"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/ten_dp"
+                app:srcCompat="@drawable/play_grey" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgStop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:visibility="gone"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/ten_dp"
+                app:srcCompat="@drawable/img_stop_record" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgPauseMeGrey"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                app:srcCompat="@drawable/pause_grey" />
+
+            <com.pulseplus.CircularSeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                app:start_angle="90"
+                app:end_angle="90"
+                app:progress="50"
+                app:max="100"
+                android:focusableInTouchMode="false"
+                app:pointer_color="@color/transp"
+                app:pointer_halo_color="@color/transp"
+                app1:circle_color="@color/progress_green"
+                app:circle_progress_color = "#FFE5E6E8" />
+        </FrameLayout>
+
+        <com.armor.fontlib.CTextView
+            android:id="@+id/txtTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/green"
+            android:textSize="50sp"
+            app:fontName="@string/MyriadPro_Regular" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:gravity="center">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/record_again"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/twelvedp"
+                android:background="@drawable/round_edge_rectangle"
+                android:visibility="visible">
+
+                <com.armor.fontlib.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/record_again"
+                    android:textSize="@dimen/twenty_sp"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    app:fontName="@string/CoreSansA45Regular"
+                    android:id="@+id/CTextView3"
+                    android:layout_weight="0.5"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/refresh"
+                    android:layout_weight="0.5"
+                    android:background="@color/green"
+                    android:id="@+id/refresh_image"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/refresh_grey"
+                    android:layout_weight="0.5"
+                    android:background="@color/green"
+                    android:id="@+id/refresh_image_grey"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+          <!--  <com.armor.fontlib.CTextView
+                android:id="@+id/stop"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_edge_rectangle"
+                android:text="STOP"
+                android:padding="@dimen/twelvedp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/twenty_sp"
+                android:visibility="gone"
+                app:fontName="@string/CoreSansA45Regular" />-->
+
+           <!-- <com.armor.fontlib.CTextView
+                android:id="@+id/record"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/twelvedp"
+                android:background="@drawable/round_edge_rectangle"
+                android:text="RECORD"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/twenty_sp"
+                android:visibility="visible"
+                app:fontName="@string/CoreSansA45Regular" />
+-->
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/send"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/twelvedp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/round_edge_rectangle">
+
+            <com.armor.fontlib.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:textSize="@dimen/twenty_sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                app:fontName="@string/CoreSansA45Regular"
+                android:id="@+id/CTextView2" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five_dp"
+                app:srcCompat="@drawable/send"
+                android:id="@+id/audio_send_icon"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five_dp"
+                app:srcCompat="@drawable/send_light_green"
+                android:visibility="gone"
+                android:id="@+id/audio_send_icon_green"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

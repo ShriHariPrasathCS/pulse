@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:id="@+id/audio_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtTimer"
+        android:layout_centerInParent="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/green_out_circle_shape"
+            android:contentDescription="@string/app_name" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/green_circle"
+            android:contentDescription="@string/app_name" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgMic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/mic_record" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/audio_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:background="@drawable/green_circle"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/ten_dp"
+            app:srcCompat="@drawable/stop_grey" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:background="@drawable/green_circle"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/ten_dp"
+            app:srcCompat="@drawable/play_grey" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:background="@drawable/green_circle"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/ten_dp"
+            app:srcCompat="@drawable/clear_grey" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/audio_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_circle"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="15dp"
+            app:srcCompat="@drawable/send_grey" />
+    </LinearLayout>
+
+    <com.armor.fontlib.CTextView
+        android:id="@+id/txtTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="94dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/green"
+        android:textSize="50sp"
+        app:fontName="@string/MyriadPro_Regular" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="41dp"
+        android:maxHeight="@dimen/five_dp"
+        android:minHeight="@dimen/five_dp"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

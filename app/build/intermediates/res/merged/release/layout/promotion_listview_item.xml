@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view4"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="1dp"
+        card_view:contentPadding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_border"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GET 20%OFF ON FIRST ORDER"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:padding="@dimen/five_dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:id="@+id/promotion_offer_tv"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MIN ORDER 300"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/twenty_sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/promotion_min_order_tv"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                <com.armor.fontlib.CButton
+                    android:id="@+id/promotion_button"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Use Now"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/ten_dp"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/coupon_code_border"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="@color/darkgreen"
+                        android:textSize="@dimen/fifteen_sp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:textStyle="italic"
+                        android:id="@+id/offer_code_tv"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

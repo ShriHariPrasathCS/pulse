@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ExpandableListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameLayout"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_weight="0.5"
+        android:clickable="false"
+        android:childDivider="@color/trans"
+        android:divider="@color/trans"
+        android:groupIndicator="@null"
+        android:padding="@dimen/ten_dp"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/edtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:visibility="visible">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgCam"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/five_dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/chat_cam_green" />
+
+            <com.armor.fontlib.CEditText
+                android:id="@+id/edtMsg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:background="@color/light_green"
+                android:hint="@string/type_msg"
+                android:padding="@dimen/four_dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/fourteen_sp"
+                app:fontName="@string/MyriadPro_Regular" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgMic"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/four_dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/chat_audio_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.armor.fontlib.CButton
+                android:id="@+id/btnReorder"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button_effect"
+                android:text="@string/palce_reorder"
+                android:textSize="@dimen/twenty_sp"
+                android:visibility="visible"
+                app:fontName="@string/MyriadPro_Regular" />
+
+            <com.armor.fontlib.CButton
+                android:id="@+id/btnNew"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_effect"
+                android:text="@string/palce_new_order"
+                android:textSize="@dimen/twenty_sp"
+                android:visibility="visible"
+                app:fontName="@string/MyriadPro_Regular" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameLayout"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/grey_trans"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

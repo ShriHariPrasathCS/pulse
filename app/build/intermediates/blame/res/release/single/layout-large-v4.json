@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-large-v4\\fragment_home.xml",
+        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\layout-large\\fragment_home.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-large-v4\\activity_splash.xml",
+        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\layout-large\\activity_splash.xml"
+    }
+]

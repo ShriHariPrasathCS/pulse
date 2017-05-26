@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gu\\values-gu.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 252,
+                    "endOffset": 353
+                },
+                "from": {
+                    "file": "C:\\Android\\.android\\build-cache\\baa9fe0a7f11348255d271f542cbddeb73615e3c\\output\\res\\values-gu\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 331,
+                        "endColumn": 252,
+                        "endOffset": 579
+                    }
+                }
+            }
+        ]
+    }
+]

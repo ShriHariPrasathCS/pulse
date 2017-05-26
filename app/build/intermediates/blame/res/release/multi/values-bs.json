@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-bs\\values-bs.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 234,
+                    "endOffset": 335
+                },
+                "from": {
+                    "file": "C:\\Users\\Bright Bridge\\.android\\build-cache\\baa9fe0a7f11348255d271f542cbddeb73615e3c\\output\\res\\values-bs\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 331,
+                        "endColumn": 234,
+                        "endOffset": 561
+                    }
+                }
+            }
+        ]
+    }
+]

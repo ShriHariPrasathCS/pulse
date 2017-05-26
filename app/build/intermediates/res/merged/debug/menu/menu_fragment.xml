@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notification_bell"
+        android:orderInCategory="100"
+        android:icon="@drawable/pending_notification_bell_white"
+        app:showAsAction="ifRoom"
+        android:title="@string/pending_orders" />
+</menu>

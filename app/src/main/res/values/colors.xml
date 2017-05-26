@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#13ab9a</color>
+    <color name="colorPrimaryDark">#11a191</color>
+    <color name="darkgreen1">#0d8f81</color>
+    <color name="colorAccent">#13ab9a</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#cde1df</color>
+    <color name="white2">#a9d2cc</color>
+    <color name="white3">#85c3ba</color>
+    <color name="light_green">#eaeef1</color>
+    <color name="grey">#818281</color>
+    <color name="green">#13ab9a</color>
+    <color name="progress_green">#54bfb0</color>
+    <color name="grey1">#7c818281</color>
+    <color name="darkgreen">#02786a</color>
+    <color name="red">#f4ba0a0a</color>
+    <color name="trans">#0502786a</color>
+    <color name="transp">#00ffffff</color>
+    <color name="circle_green">#1da18e</color>
+    <color name="circle_green1">#4cb5a8</color>
+    <color name="lightGreen">#55c0b1</color>
+    <color name="light_grey">#f4f0ed</color>
+    <color name="dark_grey">#858480</color>
+<color name="blue">#FF1A87C6</color>
+    <color name="white_trans">#b1ffffff</color>
+    <color name="grey_trans">#7c000000</color>
+    <color name="black">#000000</color>
+    <color name="player_green">#e4e9ec</color>
+    <color name="grey_light1">#cdcdcf</color>
+    <color name="grey_light2">#dddddd</color>
+    <color name="light_blue">#dde5ea</color>
+    <color name="grey2">#bcbdc1</color>
+
+
+</resources>

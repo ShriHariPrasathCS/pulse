@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dashboard_audio.png",
+        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\drawable-xxhdpi\\dashboard_audio.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bg_image.png",
+        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\drawable-xxhdpi\\bg_image.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\splash_bg.png",
+        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\drawable-xxhdpi\\splash_bg.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_menu_edit.png",
+        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_edit.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dashboard_camera.png",
+        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\drawable-xxhdpi\\dashboard_camera.png"
+    }
+]

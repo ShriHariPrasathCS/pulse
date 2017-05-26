@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Bright Bridge\\.android\\build-cache\\87aef4d3a4503af80d27a8c3ce59e6e140fe2ae9\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Bright Bridge\\.android\\build-cache\\87aef4d3a4503af80d27a8c3ce59e6e140fe2ae9\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Bright Bridge\\.android\\build-cache\\87aef4d3a4503af80d27a8c3ce59e6e140fe2ae9\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Bright Bridge\\.android\\build-cache\\87aef4d3a4503af80d27a8c3ce59e6e140fe2ae9\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Bright Bridge\\.android\\build-cache\\87aef4d3a4503af80d27a8c3ce59e6e140fe2ae9\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Bright Bridge\\.android\\build-cache\\87aef4d3a4503af80d27a8c3ce59e6e140fe2ae9\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    }
+]
