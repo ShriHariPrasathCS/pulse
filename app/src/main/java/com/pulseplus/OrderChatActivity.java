@@ -8,11 +8,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Process;
@@ -33,12 +32,12 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.armor.fileupload.FilePath;
 import com.armor.fileupload.PConstant;
 import com.armor.fileupload.upload.ImageUpload;
 import com.armor.fontlib.CButton;
 import com.armor.fontlib.CEditText;
 import com.google.gson.Gson;
+import com.iceteck.silicompressorr.SiliCompressor;
 import com.pulseplus.adapter.CartListViewAdapter;
 import com.pulseplus.adapter.MessageAdapter;
 import com.pulseplus.database.DBHelper;
@@ -208,7 +207,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                     imgMic.setImageResource(R.drawable.chat_audio_green);
                     actionSend = false;
                 }
-
             }
         });
 
@@ -239,7 +237,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                             } else {
                                 Global.dismissProgress(p);
                             }
-
                         }
                     }
 
@@ -526,28 +523,27 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
+            String filePath;
+            File myFile;
             switch (requestCode) {
                 case PConstant.CAMERA_CAPTURE:
                     // p.show();
                     p.dismiss();
                     TYPE = 1;
-                    MIME_TYPE = "image/jpeg";
-                    if (Global.saveImage(OrderChatActivity.this, fileUri, fileUri))
-                        if (MIME_TYPE != null && MIME_TYPE.contains("image")) {
-                            uploadFile(new String[]{"file"}, fileUri, null);
-                            File myFile = new File(fileUri.getPath());
-                            if (myFile.exists()) {
+                    filePath = SiliCompressor.with(this)
+                            .compress(fileUri.toString(),
+                                    new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND), true);
+                    uploadFile(new String[]{"file"}, filePath, null);
+                    myFile = new File(fileUri.getPath());
+                    if (myFile.exists()) {
+                        toJid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
+                        sendMessage(IMAGE, myFile.getName(), "");
+                        getmService().xmpp.sendMessage(myFile.getName(), toJid, String.valueOf(TYPE), getDate());
+                        //              dbHelper.insertOrderHistory(orderId, "1", "1", myFile.getAbsolutePath(), getDate());
 
-                                Bitmap myBitmap = BitmapFactory.decodeFile(myFile.getAbsolutePath());
-                                toJid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
-                                sendMessage(IMAGE, myFile.getName(), "");
-                                getmService().xmpp.sendMessage(myFile.getName(), toJid, String.valueOf(TYPE), getDate());
-                       //              dbHelper.insertOrderHistory(orderId, "1", "1", myFile.getAbsolutePath(), getDate());
-
-                                adapter.notifyDataSetChanged();
-                            }
-                            PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, childList.size());
-                        }
+                        adapter.notifyDataSetChanged();
+                    }
+                    PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, childList.size());
                     break;
                 case PConstant.GALLERY_PICK:
                     //  p.show()
@@ -556,16 +552,16 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                     Uri selectedImageUri = data.getData();
                     MIME_TYPE = getContentResolver().getType(selectedImageUri);
                     if (MIME_TYPE != null && MIME_TYPE.contains("image")) {
-                        fileUri = Uri.fromFile(Global.getPhotoDirectory(Global.IMAGE_SEND));
-                        Global.saveImage(OrderChatActivity.this, selectedImageUri, fileUri);
-                        uploadFile(new String[]{"file"}, fileUri, null);
-                        File myFile = new File(fileUri.getPath());
+                        filePath = SiliCompressor.with(this)
+                                .compress(selectedImageUri.toString(),
+                                        new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND), true);
+                        uploadFile(new String[]{"file"}, filePath, null);
+                        myFile = new File(fileUri.getPath());
                         if (myFile.exists()) {
-                            Bitmap myBitmap = BitmapFactory.decodeFile(myFile.getAbsolutePath());
                             toJid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
                             sendMessage(IMAGE, myFile.getName(), "");
                             getmService().xmpp.sendMessage(myFile.getName(), toJid, String.valueOf(TYPE), getDate());
-                         //       dbHelper.insertOrderHistory(orderId, "1", "1", myFile.getAbsolutePath(), getDate());
+                            //       dbHelper.insertOrderHistory(orderId, "1", "1", myFile.getAbsolutePath(), getDate());
                             // progressBar.setVisibility(View.VISIBLE);
                             adapter.notifyDataSetChanged();
                         }
@@ -576,10 +572,7 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                     p.show();
                     TYPE = 2;
                     if (data != null) {
-                        Bundle uri = data.getBundleExtra("uriBundle");
-                        String audioUri = uri.getString("uri");
-                        fileUri = Uri.parse(audioUri);
-                        uploadFile(new String[]{"file"}, fileUri, null);
+                        uploadFile(new String[]{"file"}, data.getStringExtra("audio_path"), null);
                         PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, childList.size());
                     }
                     break;
@@ -607,10 +600,9 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         }
     }
 
-    private void uploadFile(final String[] key, Uri fileURI, final File thumb) {
-        if (fileURI != null) {
-
-            final File file = new File(FilePath.getPath(OrderChatActivity.this, fileURI));
+    private void uploadFile(final String[] key, String filePath, final File thumb) {
+        if (!TextUtils.isEmpty(filePath)) {
+            final File file = new File(filePath);
             if (file.exists()) {
                 //  p.show();
                 String url = RetrofitSingleton.BASE_URL + "/pulseplus/api/index.php/prescription_upload";

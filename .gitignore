@@ -10,4 +10,5 @@
 .idea/workspace.xml
 app/src/androidTest/
 app/src/test/
-build/
+/build/
+/app/build/

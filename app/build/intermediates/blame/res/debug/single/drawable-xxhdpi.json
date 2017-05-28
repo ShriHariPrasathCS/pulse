@@ -8,12 +8,12 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\navigation_drawer_help_icon.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash_with_offer.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\splash_with_offer.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bg_image.png",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\bg_image.png"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash_with_offer.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\splash_with_offer.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\cart_icon_chat.png",

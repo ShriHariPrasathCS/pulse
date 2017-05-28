@@ -224,7 +224,7 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != 0) {
+        if (resultCode == Activity.RESULT_OK) {
             String filePath;
             switch (requestCode) {
                 case PConstant.CAMERA_CAPTURE:
@@ -249,12 +249,12 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
                     break;
                 case Global.AUDIO_REC:
                     TYPE = 2;
-                    if (data != null) {
-                        Bundle uri = data.getBundleExtra("uriBundle");
-                        String audioUri = uri.getString("uri");
-                        fileUri = Uri.parse(audioUri);
-//                        uploadFile(new String[]{"file"}, fileUri, null);
-                    }
+//                    if (data != null) {
+//                        Bundle uri = data.getBundleExtra("uriBundle");
+//                        String audioUri = uri.getString("uri");
+//                        fileUri = Uri.parse(audioUri);
+                    uploadFile(new String[]{"file"}, data.getStringExtra("audio_path"), null);
+//                    }
                     break;
             }
         }

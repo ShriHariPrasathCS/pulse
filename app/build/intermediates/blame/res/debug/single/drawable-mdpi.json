@@ -96,12 +96,12 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-mdpi\\navigation_drawer_promotion_icon.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\notification_bell.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-mdpi\\notification_bell.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\cart_close.png",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-mdpi\\cart_close.png"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\notification_bell.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-mdpi\\notification_bell.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\cart_plus_holo.png",

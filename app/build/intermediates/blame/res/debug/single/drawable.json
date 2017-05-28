@@ -124,12 +124,12 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\walk2.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\img_stop_record.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\img_stop_record.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_white2.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\circle_white2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\img_stop_record.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\img_stop_record.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green_circle.xml",
@@ -232,12 +232,12 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\send_shape_grey.xml"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recvr_border.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\recvr_border.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_white1.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\circle_white1.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recvr_border.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\recvr_border.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_chat_no_border.png",
@@ -276,16 +276,16 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\stop_shape_grey.xml"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\aboutus_logo.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\aboutus_logo.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_mic.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\dark_mic.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\aboutus_logo.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\aboutus_logo.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
@@ -296,12 +296,12 @@
         "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\img_stop.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\img_stop.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\player_dialog_desigh.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\player_dialog_desigh.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\img_stop.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\img_stop.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_chat_green.9.png",
@@ -404,12 +404,12 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\audio_file.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_chat_light_grey.9.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\left_chat_light_grey.9.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\play_shape_grey.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\play_shape_grey.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_chat_light_grey.9.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\left_chat_light_grey.9.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promotion_three.jpg",
@@ -564,12 +564,12 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\down_black.xml"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\walk1.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\walk1.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_image.png",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\bg_image.png"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\walk1.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\walk1.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_progress.xml",
@@ -612,14 +612,6 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\ic_next_black.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender_border.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\sender_border.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recvr.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\recvr.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\drawable\\notification_icon_background.xml"
     },
@@ -628,12 +620,16 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\dark_green_circle1.xml"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender_border.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\sender_border.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_previous_black.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\ic_previous_black.png"
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recvr.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\recvr.png"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
@@ -642,6 +638,10 @@
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\menu.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_previous_black.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\ic_previous_black.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
@@ -676,12 +676,12 @@
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\offers_other.jpg"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_pause_black.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\ic_pause_black.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_pause_black.png",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable\\ic_pause_black.png"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash_logo.png",

@@ -29,11 +29,12 @@ public class AudioRecordActivity extends AppCompatActivity {
 
 
     public AppCompatImageView imgPlay, imgPauseMe, imgPlayGrey, imgPauseMeGrey, audio_stop, audio_record, refresh_image_grey, refresh_image, audio_send_icon, audio_send_icon_green;
-    //CTextView  audio_record;
-    LinearLayout audio_send, audio_recordagain;
     public TextView txtTimer;
     public CircularSeekBar seekBar;
     public Toolbar toolbar;
+    //CTextView  audio_record;
+    LinearLayout audio_send, audio_recordagain;
+    boolean duration = false;
     private MediaRecorder mediaRecorder;
     private Uri audioURI;
     private long startTime = 0L;
@@ -42,9 +43,6 @@ public class AudioRecordActivity extends AppCompatActivity {
     private long updatedTime = 0L;
     private MediaPlayer player = new MediaPlayer();
     private int time;
-    boolean duration = false;
-
-
     private boolean isRecording = false;
 
     private Handler handler = new Handler();
@@ -105,7 +103,6 @@ public class AudioRecordActivity extends AppCompatActivity {
         refresh_image = (AppCompatImageView) findViewById(R.id.refresh_image);
         audio_send_icon = (AppCompatImageView) findViewById(R.id.audio_send_icon);
         audio_send_icon_green = (AppCompatImageView) findViewById(R.id.audio_send_icon_green);
-
 
 
         refresh_image.setVisibility(View.GONE);
@@ -172,7 +169,7 @@ public class AudioRecordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!isRecording) {
                     visibility(1);
-
+                    audioURI = getAudioUri();
                     audio_stop.setVisibility(View.VISIBLE);
                     audio_record.setVisibility(View.GONE);
                     imgPlay.setVisibility(View.GONE);
@@ -180,7 +177,7 @@ public class AudioRecordActivity extends AppCompatActivity {
                     refresh_image.setVisibility(View.GONE);
                     audio_send_icon_green.setVisibility(View.VISIBLE);
                     audio_send_icon.setVisibility(View.GONE);
-                  //  imgPlayGrey.setVisibility(View.VISIBLE);
+                    //  imgPlayGrey.setVisibility(View.VISIBLE);
 
                     audio_stop.setClickable(true);
                     audio_stop.setEnabled(true);
@@ -194,7 +191,7 @@ public class AudioRecordActivity extends AppCompatActivity {
                     refresh_image_grey.setEnabled(false);
 
 
-                    audioURI = getAudioUri();
+
                     startTime = SystemClock.uptimeMillis();
                     txtTimer.setText("00:00");
                     handler.postDelayed(runnable, 100);
@@ -220,7 +217,7 @@ public class AudioRecordActivity extends AppCompatActivity {
                     refresh_image.setVisibility(View.VISIBLE);
                     audio_send_icon_green.setVisibility(View.GONE);
                     audio_send_icon.setVisibility(View.VISIBLE);
-                  //  imgPlayGrey.setVisibility(View.GONE);
+                    //  imgPlayGrey.setVisibility(View.GONE);
 
                     audio_recordagain.setClickable(true);
                     audio_recordagain.setEnabled(true);
@@ -243,7 +240,7 @@ public class AudioRecordActivity extends AppCompatActivity {
                         audio_stop.setVisibility(View.GONE);
                         audio_recordagain.setVisibility(View.VISIBLE);
                         imgPlay.setVisibility(View.VISIBLE);
-                    //    imgPlayGrey.setVisibility(View.GONE);
+                        //    imgPlayGrey.setVisibility(View.GONE);
 
                         imgPlay.setClickable(true);
                         audio_recordagain.setClickable(true);
@@ -267,10 +264,11 @@ public class AudioRecordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!isRecording) {
                     visibility(1);
+                    audioURI = getAudioUri();
                     audio_stop.setVisibility(View.VISIBLE);
                     audio_record.setVisibility(View.GONE);
                     imgPlay.setVisibility(View.GONE);
-                  //  imgPlayGrey.setVisibility(View.VISIBLE);
+                    //  imgPlayGrey.setVisibility(View.VISIBLE);
                     refresh_image_grey.setVisibility(View.VISIBLE);
                     refresh_image.setVisibility(View.GONE);
                     audio_send_icon_green.setVisibility(View.VISIBLE);
@@ -284,7 +282,7 @@ public class AudioRecordActivity extends AppCompatActivity {
                     imgPlayGrey.setEnabled(false);
                     imgPlayGrey.setClickable(false);
 
-                    audioURI = getAudioUri();
+
                     startTime = SystemClock.uptimeMillis();
                     txtTimer.setText("00:00");
                     handler.postDelayed(runnable, 100);
@@ -297,11 +295,10 @@ public class AudioRecordActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (audioURI != null) {
-                    Bundle bundle = new Bundle();
-                    bundle.putString("uri", String.valueOf(audioURI));
+                    String filePath = FilePath.getPath(AudioRecordActivity.this, audioURI);
                     Intent intent = new Intent();
-                    intent.putExtra("uriBundle", bundle);
-                    setResult(Global.AUDIO_REC, intent);
+                    intent.putExtra("audio_path", filePath);
+                    setResult(RESULT_OK, intent);
                     finish();
                 } else {
                     Global.CustomToast(AudioRecordActivity.this, "Record Your Order and Send");
@@ -349,8 +346,6 @@ public class AudioRecordActivity extends AppCompatActivity {
                     seekBar.setVisibility(View.VISIBLE);
                     //audioURI = getAudioUri();
                     startTime = SystemClock.uptimeMillis();
-
-
                 }
             }
         });
