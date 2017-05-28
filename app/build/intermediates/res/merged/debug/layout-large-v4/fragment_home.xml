@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.pulseplus.GifImageView
-        android:id="@+id/GifImageView"
+    <com.whygraphics.gifview.gif.GIFView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:scaleType="fitXY"
-        android:background="@drawable/bg_gif_800x1280"
-        android:contentDescription="@string/app_name" />
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:gif_src="asset:bg_gif_800x1280.gif" />
+
 
     <LinearLayout
         android:id="@+id/loadLayout"
@@ -19,7 +19,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="35dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -27,24 +26,19 @@
             android:id="@+id/camera_layout"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_margin="40dp"
             android:background="@drawable/dashboard_camera"
             android:fadingEdgeLength="@dimen/twenty_dp"
-            android:gravity="center">
+            android:gravity="center" />
 
-        </RelativeLayout>
-
-        <View
-            android:layout_width="100dp"
-            android:layout_height="0dp" />
 
         <RelativeLayout
             android:id="@+id/audio_layout"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_margin="40dp"
             android:background="@drawable/dashboard_audio"
             android:fadingEdgeLength="@dimen/twenty_dp"
-            android:gravity="center">
-
-        </RelativeLayout>
+            android:gravity="center" />
     </LinearLayout>
 </RelativeLayout>

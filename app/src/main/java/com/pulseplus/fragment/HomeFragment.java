@@ -10,10 +10,11 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,12 +26,11 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.armor.fileupload.FilePath;
 import com.armor.fileupload.PConstant;
 import com.armor.fileupload.upload.ImageUpload;
 import com.google.gson.Gson;
+import com.iceteck.silicompressorr.SiliCompressor;
 import com.pulseplus.AudioRecordActivity;
-import com.pulseplus.GifImageView;
 import com.pulseplus.MainActivity;
 import com.pulseplus.OrderChatActivity;
 import com.pulseplus.PendingOrdersActivity;
@@ -73,10 +73,8 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
     private Uri fileUri;
     private ProgressDialog p;
     private int TYPE;
-    private Toolbar toolbar;
     private ImageView cart_imageView;
     private String userid;
-    private GifImageView gifImageView;
     private APIService apiService;
     private AppCompatImageView imgCamera, imgAudio;
     private Date date;
@@ -164,7 +162,6 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent = new Intent(getActivity(), PendingOrdersActivity.class);
         startActivity(intent);
-        int id = item.getItemId();
         return super.onOptionsItemSelected(item);
     }
 
@@ -172,20 +169,10 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
     private void init(View view) {
         prescripLayout = (RelativeLayout) view.findViewById(R.id.camera_layout);
         audioLayout = (RelativeLayout) view.findViewById(R.id.audio_layout);
-        //   txtDate = (TextView) view.findViewById(R.id.txtDate);
-        //    imgCamera = (AppCompatImageView)view.findViewById(R.id.imgCamera);
-        gifImageView = (GifImageView) view.findViewById(R.id.GifImageView);
-        //    imgAudio = (AppCompatImageView)view.findViewById(R.id.imgAudio);
-        toolbar = (Toolbar) view.findViewById(R.id.home_toolbar);
-
 
         p = Global.initProgress(getActivity());
         userid = PrefConnect.readString(getActivity(), PrefConnect.USER_ID, "");
         apiService = RetrofitSingleton.createService(APIService.class);
-
-        //  date = new Date();
-        //   String currentDate = Global.getDate(date, "MMMM dd");
-        //    txtDate.setText(currentDate);
 
 
         details = new ArrayList<>();
@@ -238,23 +225,26 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode != 0) {
+            String filePath;
             switch (requestCode) {
                 case PConstant.CAMERA_CAPTURE:
                     TYPE = 1;
                     MIME_TYPE = "image/jpeg";
-                    Global.saveImage(getActivity(), fileUri, fileUri);
-                    if (MIME_TYPE != null && MIME_TYPE.contains("image")) {
-                        uploadFile(new String[]{"file"}, fileUri, null);
-                    }
+//                    Global.saveImage(getActivity(), fileUri, fileUri);
+                    filePath = SiliCompressor.with(getActivity())
+                            .compress(fileUri.toString(),
+                                    new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND), true);
+                    uploadFile(new String[]{"file"}, filePath, null);
                     break;
                 case PConstant.GALLERY_PICK:
                     TYPE = 1;
                     Uri selectedImageUri = data.getData();
                     MIME_TYPE = getActivity().getContentResolver().getType(selectedImageUri);
                     if (MIME_TYPE != null && MIME_TYPE.contains("image")) {
-                        fileUri = Uri.fromFile(Global.getPhotoDirectory(Global.IMAGE_SEND));
-                        Global.saveImage(getActivity(), selectedImageUri, fileUri);
-                        uploadFile(new String[]{"file"}, fileUri, null);
+                        filePath = SiliCompressor.with(getActivity())
+                                .compress(selectedImageUri.toString(),
+                                        new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND));
+                        uploadFile(new String[]{"file"}, filePath, null);
                     }
                     break;
                 case Global.AUDIO_REC:
@@ -263,24 +253,19 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
                         Bundle uri = data.getBundleExtra("uriBundle");
                         String audioUri = uri.getString("uri");
                         fileUri = Uri.parse(audioUri);
-                        uploadFile(new String[]{"file"}, fileUri, null);
+//                        uploadFile(new String[]{"file"}, fileUri, null);
                     }
                     break;
             }
         }
     }
 
-    private void uploadFile(final String[] key, Uri fileURI, final File thumb) {
-        if (fileURI != null) {
-            final File file = new File(FilePath.getPath(getActivity(), fileURI));
+    private void uploadFile(final String[] key, String filePath, final File thumb) {
+        if (!TextUtils.isEmpty(filePath)) {
+            final File file = new File(filePath);
             if (file.exists()) {
-
-//                p.setProgressDrawable(getResources().getDrawable(R.drawable.bg_image));
                 p.setMessage("Generating Order");
                 p.show();
-
-//                Intent intent = new Intent(getActivity(), OrderChatActivity.class);
-//                startActivity(intent);
                 String url = RetrofitSingleton.BASE_URL + "/pulseplus/api/index.php/prescription_upload";
                 ImageUpload imageUpload = new ImageUpload(getActivity(), url, new ImageUpload.UploadListener() {
                     @Override
@@ -359,6 +344,7 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
 
     @Override
     public void onResume() {
+        super.onResume();
         getActivity().invalidateOptionsMenu();
         super.onStop();
         EventBus.getDefault().unregister(this);
@@ -375,8 +361,6 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
         } else {
             Global.CustomToast(getActivity(), "Please check your internet connection");
             Global.Toast(getActivity(), "Check your internet connection");
-
         }
     }
-
 }
