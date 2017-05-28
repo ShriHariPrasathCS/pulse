@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 105,
-                    "endColumn": 257,
-                    "endOffset": 358
-                },
-                "from": {
-                    "file": "C:\\Android\\.android\\build-cache\\baa9fe0a7f11348255d271f542cbddeb73615e3c\\output\\res\\values-is\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 331,
-                        "endColumn": 257,
-                        "endOffset": 584
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
         "map": [
             {

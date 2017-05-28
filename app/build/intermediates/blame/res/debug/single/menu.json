@@ -1,23 +1,11 @@
 [
     {
-        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_fragment.xml",
-        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\menu\\menu_fragment.xml"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\debug\\menu\\edit.xml",
-        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\menu\\edit.xml"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\menu\\global.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\menu\\edit.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\menu\\edit.xml"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
-        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\menu\\global.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_fragment.xml",

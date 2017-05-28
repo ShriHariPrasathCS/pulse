@@ -1,13 +1,5 @@
 [
     {
-        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\fragment_home.xml",
-        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\layout-xlarge\\fragment_home.xml"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\activity_splash.xml",
-        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\layout-xlarge\\activity_splash.xml"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-v4\\activity_splash.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\layout-xlarge\\activity_splash.xml"
     }

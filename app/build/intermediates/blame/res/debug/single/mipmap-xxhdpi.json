@@ -1,9 +1,5 @@
 [
     {
-        "merged": "F:\\Android Studio Projects\\PulsePlus\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "F:\\Android Studio Projects\\PulsePlus\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
