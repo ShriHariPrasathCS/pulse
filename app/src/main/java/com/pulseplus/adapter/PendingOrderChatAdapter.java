@@ -32,7 +32,7 @@ import java.util.Date;
 
 
 /**
- * Created by Bright Bridge on 10-Apr-17.
+ * Bright Bridge on 10-Apr-17.
  */
 
 public class PendingOrderChatAdapter extends BaseExpandableListAdapter {

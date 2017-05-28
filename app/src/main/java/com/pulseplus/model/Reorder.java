@@ -3,7 +3,7 @@ package com.pulseplus.model;
 import com.google.gson.annotations.Expose;
 
 /**
- * Created by Bright Bridge on 06-Oct-16.
+ * Bright Bridge on 06-Oct-16.
  */
 
 public  class Reorder {

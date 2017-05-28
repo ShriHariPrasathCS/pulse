@@ -3,7 +3,7 @@ package com.pulseplus.model;
 import com.google.gson.annotations.Expose;
 
 /**
- * Created by Bright Bridge on 05-Apr-17.
+ * Bright Bridge on 05-Apr-17.
  */
 
 public class CartMedicineDelete {

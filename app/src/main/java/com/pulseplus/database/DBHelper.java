@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import static com.pulseplus.database.DBHelper.Order.COL_ORDERID;
 
 /**
- * Created by Bright Bridge on 19-Jan-17.
+ * Bright Bridge on 19-Jan-17.
  */
 
 public class DBHelper extends SQLiteOpenHelper {

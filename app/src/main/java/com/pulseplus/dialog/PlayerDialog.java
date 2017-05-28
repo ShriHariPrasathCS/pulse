@@ -20,7 +20,7 @@ import java.io.FileDescriptor;
 import java.io.FileInputStream;
 
 /**
- * Created by Bright Bridge on 29-Nov-16.
+ * Bright Bridge on 29-Nov-16.
  */
 
 public class PlayerDialog extends DialogFragment {

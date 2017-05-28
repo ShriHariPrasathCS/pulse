@@ -15,7 +15,6 @@ import com.pulseplus.model.OfferUpdate;
 import com.pulseplus.model.OrderHistory;
 import com.pulseplus.model.OrderHistoryChat;
 import com.pulseplus.model.OrderIdGen;
-import com.pulseplus.model.PendingOrder;
 import com.pulseplus.model.ProfileModule;
 import com.pulseplus.model.Promotion;
 import com.pulseplus.model.Register;
@@ -68,11 +67,11 @@ public interface APIService {
     @GET("/pulseplus/api/index.php/order_history/{userid}")
     Call<OrderHistory> orderHistory(@Path("userid") String userid);
 
-    @GET("/pulseplus/api/index.php/get_pending_order/{userid}")
-    Call<PendingOrder> pendingOrders(@Path("userid") String userid);
+//    @GET("/pulseplus/api/index.php/get_pending_order/{userid}")
+//    Call<PendingOrder> pendingOrders(@Path("userid") String userid);
 
     @GET("/pulseplus/api/index.php/promotion/{user_id}")
-    Call<Promotion>promotion(@Path("user_id") String id);
+    Call<Promotion> promotion(@Path("user_id") String id);
 
     @GET("/pulseplus/api/index.php/chat_history/{orderid}")
     Call<OrderHistoryChat> orderHistoryChat(@Path("orderid") String orderid);
@@ -92,23 +91,23 @@ public interface APIService {
     Call<SaveToCart> saveToCart(@Path("orderid") String orderid);
 
     @GET("/pulseplus/api/index.php/offer_update/{user_id}/{offer_code}")
-    Call<OfferUpdate>offerUpdate(@Path("user_id") String user_id, @Path("offer_code") String offer_code );
+    Call<OfferUpdate> offerUpdate(@Path("user_id") String user_id, @Path("offer_code") String offer_code);
 
     @GET("/pulseplus/api/index.php/cart_list/{orderid}")
-    Call<Cart>cart(@Path("orderid") String orderid);
+    Call<Cart> cart(@Path("orderid") String orderid);
 
     @POST("/pulseplus/api/index.php/delete_cart")
-    Call<CartMedicineDelete.Response>cartMedicineDelete(@Body CartMedicineDelete.Request request );
+    Call<CartMedicineDelete.Response> cartMedicineDelete(@Body CartMedicineDelete.Request request);
 
     //schedule delivery morning
     @GET("/pulseplus/api/index.php/morning_delivery/{orderid}")
-    Call<MorningDelivery>morningDelivery(@Path("orderid") String orderid);
+    Call<MorningDelivery> morningDelivery(@Path("orderid") String orderid);
 
     // Schedule Delivery Evening
     @GET("/pulseplus/api/index.php/evening_delivery/{orderid}")
-    Call<EveningDelivery>eveningDelivery(@Path("orderid") String orderid);
+    Call<EveningDelivery> eveningDelivery(@Path("orderid") String orderid);
 
     //Send Cart Value
     @POST("/pulseplus/api/index.php/edit_cart")
-    Call<EditCart.Response>editCart(@Body EditCart.Request request);
+    Call<EditCart.Response> editCart(@Body EditCart.Request request);
 }

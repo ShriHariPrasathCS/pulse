@@ -26,7 +26,7 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 /**
- * Created by Bright Bridge on 18-Nov-16.
+ * Bright Bridge on 18-Nov-16.
  */
 
 public class AboutUsFragment extends Fragment {

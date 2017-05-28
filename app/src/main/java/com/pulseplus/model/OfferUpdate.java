@@ -3,7 +3,7 @@ package com.pulseplus.model;
 import com.google.gson.annotations.Expose;
 
 /**
- * Created by Bright Bridge on 13-Jan-17.
+ * Bright Bridge on 13-Jan-17.
  */
 
 public class OfferUpdate {

@@ -5,7 +5,7 @@ import com.google.gson.annotations.Expose;
 import java.util.ArrayList;
 
 /**
- * Created by Bright Bridge on 06-Oct-16.
+ * Bright Bridge on 06-Oct-16.
  */
 
 public class OrderHistoryChat {

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.pulseplus.R;
 
 /**
- * Created by Bright Bridge on 23-Mar-17.
+ * Bright Bridge on 23-Mar-17.
  */
 
 public class CartDialog extends DialogFragment {

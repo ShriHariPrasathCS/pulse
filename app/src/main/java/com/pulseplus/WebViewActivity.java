@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 import com.pulseplus.global.Global;
 
 /**
- * Created by Bright Bridge on 03-Jan-17.
+ * Bright Bridge on 03-Jan-17.
  */
 
 public class WebViewActivity extends ActionBarActivity{

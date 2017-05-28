@@ -5,7 +5,7 @@ import com.google.gson.annotations.Expose;
 import java.util.ArrayList;
 
 /**
- * Created by Bright Bridge on 25-Apr-17.
+ * Bright Bridge on 25-Apr-17.
  */
 
 public class EditCart {

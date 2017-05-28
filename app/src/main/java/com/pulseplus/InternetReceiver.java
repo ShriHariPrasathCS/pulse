@@ -14,7 +14,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * Created by Bright Bridge on 28-Dec-16.
+ * Bright Bridge on 28-Dec-16.
  */
 
 public class InternetReceiver extends BroadcastReceiver {

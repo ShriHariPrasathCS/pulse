@@ -16,7 +16,7 @@ import com.pulseplus.R;
 import com.pulseplus.navigation.DrawerFragment;
 
 /**
- * Created by Bright Bridge on 03-Jan-17.
+ * Bright Bridge on 03-Jan-17.
  */
 
 public class FaqFragment extends Fragment {

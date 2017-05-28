@@ -11,7 +11,7 @@ import com.armor.fontlib.CTextView;
 import com.pulseplus.R;
 
 /**
- * Created by Bright Bridge on 14-Nov-16.
+ * Bright Bridge on 14-Nov-16.
  */
 
 public class BlacklistConfirmDialog extends DialogFragment{

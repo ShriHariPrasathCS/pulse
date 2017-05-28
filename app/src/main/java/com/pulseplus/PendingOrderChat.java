@@ -28,7 +28,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * Created by Bright Bridge on 10-Apr-17.
+ * Bright Bridge on 10-Apr-17.
  */
 
 public class PendingOrderChat extends AppCompatActivity {

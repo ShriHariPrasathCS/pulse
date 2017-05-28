@@ -5,7 +5,7 @@ import com.google.gson.annotations.Expose;
 import java.util.ArrayList;
 
 /**
- * Created by Bright Bridge on 23-Mar-17.
+ * Bright Bridge on 23-Mar-17.
  */
 
 public class Cart {

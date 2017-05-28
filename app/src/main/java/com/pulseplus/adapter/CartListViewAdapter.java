@@ -28,7 +28,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * Created by Bright Bridge on 23-Mar-17.
+ * Bright Bridge on 23-Mar-17.
  */
 
 public class CartListViewAdapter extends ArrayAdapter {

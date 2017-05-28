@@ -1,7 +1,7 @@
 package com.pulseplus.model;
 
 /**
- * Created by Bright Bridge on 28-Dec-16.
+ * Bright Bridge on 28-Dec-16.
  */
 
 public class Internet {

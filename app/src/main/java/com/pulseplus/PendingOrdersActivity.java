@@ -14,7 +14,7 @@ import com.pulseplus.database.DBHelper;
 import com.pulseplus.model.PendingOrder;
 
 /**
- * Created by Bright Bridge on 07-Apr-17.
+ * Bright Bridge on 07-Apr-17.
  */
 
 public class PendingOrdersActivity extends AppCompatActivity {

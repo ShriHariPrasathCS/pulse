@@ -13,7 +13,7 @@ import android.widget.RemoteViews;
 import com.pulseplus.R;
 
 /**
- * Created by Bright Bridge on 29-Nov-16.
+ * Bright Bridge on 29-Nov-16.
  */
 
 public class JcNotificationPlayer implements JcPlayerService.JCPlayerServiceListener{

@@ -27,7 +27,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * Created by Bright Bridge on 25-Mar-17.
+ * Bright Bridge on 25-Mar-17.
  */
 
 public class OrderConfirmationActivity extends AppCompatActivity implements CartListViewAdapter.CartListener, ScheduleOrder.ScheduleCallback {

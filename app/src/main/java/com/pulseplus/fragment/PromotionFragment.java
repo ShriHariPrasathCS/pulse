@@ -34,7 +34,7 @@ import retrofit2.Response;
 import static android.content.ContentValues.TAG;
 
 /**
- * Created by Bright Bridge on 26-Dec-16.
+ * Bright Bridge on 26-Dec-16.
  */
 
 public class PromotionFragment extends Fragment {

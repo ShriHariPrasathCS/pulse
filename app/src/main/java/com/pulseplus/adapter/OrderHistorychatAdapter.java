@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by Bright Bridge on 06-Oct-16.
+ * Bright Bridge on 06-Oct-16.
  */
 
 public class OrderHistorychatAdapter extends BaseExpandableListAdapter {
