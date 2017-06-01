@@ -26,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.armor.fileupload.FilePath;
 import com.armor.fileupload.PConstant;
 import com.armor.fileupload.upload.ImageUpload;
 import com.google.gson.Gson;
@@ -232,7 +233,7 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
                     MIME_TYPE = "image/jpeg";
 //                    Global.saveImage(getActivity(), fileUri, fileUri);
                     filePath = SiliCompressor.with(getActivity())
-                            .compress(fileUri.toString(),
+                            .compress(FilePath.getPath(getActivity(), fileUri),
                                     new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND), true);
                     uploadFile(new String[]{"file"}, filePath, null);
                     break;
@@ -241,8 +242,9 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
                     Uri selectedImageUri = data.getData();
                     MIME_TYPE = getActivity().getContentResolver().getType(selectedImageUri);
                     if (MIME_TYPE != null && MIME_TYPE.contains("image")) {
+
                         filePath = SiliCompressor.with(getActivity())
-                                .compress(selectedImageUri.toString(),
+                                .compress(FilePath.getPath(getActivity(), selectedImageUri),
                                         new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND));
                         uploadFile(new String[]{"file"}, filePath, null);
                     }

@@ -64,6 +64,7 @@ public class OrderConfirmationActivity extends AppCompatActivity implements Cart
                     EditCart.Cart cart1 = new EditCart.Cart(cart.getName(), cart.getQty(), cart.getTotal());
                     list.add(cart1);
                 }
+                String orderid = PrefConnect.readString(OrderConfirmationActivity.this, PrefConnect.ORDER_ID, "");
                 EditCart.Request request = new EditCart.Request(orderid, list);
                 Call<EditCart.Response> call = apiService.editCart(request);
                 call.enqueue(new Callback<EditCart.Response>() {

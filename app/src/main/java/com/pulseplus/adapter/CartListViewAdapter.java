@@ -101,6 +101,7 @@ public class CartListViewAdapter extends ArrayAdapter {
                 holder.tv_total_product_price.setText("Rs." + total_product_price);
                 String tttt = String.valueOf(total_product_price);
                 cartLists.get(position).setTotal(tttt);
+                cartLists.get(position).setQty(tttt);
                 if (cartListener != null) {
                     cartListener.onCardAddOrRemove(getCartTotal());
                 }
@@ -121,6 +122,7 @@ public class CartListViewAdapter extends ArrayAdapter {
                     holder.tv_total_product_price.setText("Rs." + total_product_price);
                     String tttt = String.valueOf(total_product_price);
                     cartLists.get(position).setTotal(tttt);
+                    cartLists.get(position).setQty(tttt);
                     if (cartListener != null) {
                         cartListener.onCardAddOrRemove(getCartTotal());
                     }
