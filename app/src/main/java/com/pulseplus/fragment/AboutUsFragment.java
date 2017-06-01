@@ -53,7 +53,7 @@ public class AboutUsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), WebViewActivity.class);
-                intent.putExtra("url","http://pulseplus.in/terms/");
+                intent.putExtra("url", "http://pulseplus.in/terms/");
                 startActivity(intent);
             }
         });
@@ -61,12 +61,12 @@ public class AboutUsFragment extends Fragment {
         about_pulse_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!visible){
+                if (!visible) {
                     img_left_about_pp.setVisibility(View.GONE);
                     img_down_about_pp.setVisibility(View.VISIBLE);
                     sub_about_us_layout.setVisibility(View.VISIBLE);
                     visible = true;
-                }else {
+                } else {
                     img_down_about_pp.setVisibility(View.GONE);
                     img_left_about_pp.setVisibility(View.VISIBLE);
                     sub_about_us_layout.setVisibility(View.GONE);
@@ -99,9 +99,8 @@ public class AboutUsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), WebViewActivity.class);
-                intent.putExtra("url","http://pulseplus.in/our-team/");
+                intent.putExtra("url", "http://pulseplus.in/our-team/");
                 startActivity(intent);
-
 
 
             }
@@ -111,7 +110,7 @@ public class AboutUsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), WebViewActivity.class);
-                intent.putExtra("url","http://pulseplus.in/activity/");
+                intent.putExtra("url", "http://pulseplus.in/activity/");
                 startActivity(intent);
 
             }
@@ -121,45 +120,44 @@ public class AboutUsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), WebViewActivity.class);
-                intent.putExtra("url","http://pulseplus.in/our-mission/");
+                intent.putExtra("url", "http://pulseplus.in/our-mission/");
                 startActivity(intent);
 
             }
         });
 
 
-
     }
 
-   /* public class myWebClient extends WebViewClient
-    {
-        @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            // TODO Auto-generated method stub
-            super.onPageStarted(view, url, favicon);
-        }
+    /* public class myWebClient extends WebViewClient
+     {
+         @Override
+         public void onPageStarted(WebView view, String url, Bitmap favicon) {
+             // TODO Auto-generated method stub
+             super.onPageStarted(view, url, favicon);
+         }
 
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            // TODO Auto-generated method stub
-            progressBar.setVisibility(View.VISIBLE);
-            view.loadUrl(url);
-            return true;
+         @Override
+         public boolean shouldOverrideUrlLoading(WebView view, String url) {
+             // TODO Auto-generated method stub
+             progressBar.setVisibility(View.VISIBLE);
+             view.loadUrl(url);
+             return true;
 
-        }
+         }
 
-        @Override
-        public void onPageFinished(WebView view, String url) {
-            // TODO Auto-generated method stub
-            super.onPageFinished(view, url);
+         @Override
+         public void onPageFinished(WebView view, String url) {
+             // TODO Auto-generated method stub
+             super.onPageFinished(view, url);
 
-            progressBar.setVisibility(View.GONE);
-        }
-    }
-*/
+             progressBar.setVisibility(View.GONE);
+         }
+     }
+ */
     private void init() {
-        terms_condition = (LinearLayout)view.findViewById(R.id.terms_condition);
-        about_pulse_plus = (LinearLayout)view.findViewById(R.id.about_pulse_plus);
+        terms_condition = (LinearLayout) view.findViewById(R.id.terms_condition);
+        about_pulse_plus = (LinearLayout) view.findViewById(R.id.about_pulse_plus);
         sub_about_us_layout = (LinearLayout) view.findViewById(R.id.sub_about_us_layout);
         img_left_about_pp = (ImageView) view.findViewById(R.id.img_left_about_pp);
         img_down_about_pp = (ImageView) view.findViewById(R.id.img_down_about_pp);
@@ -191,7 +189,7 @@ public class AboutUsFragment extends Fragment {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onInternetConnectionCheck(Internet internet) {
         if (internet.isConnected) {
-           // Global.CustomToast(getActivity(), "Internet Avaliable");
+            // Global.CustomToast(getActivity(), "Internet Avaliable");
         } else {
             Global.CustomToast(getActivity(), "Check your internet connection");
             //Global.Toast(MainActivity.this, "Check your internet connection");

@@ -20,8 +20,6 @@ public class WhitelistConfirmDialog extends DialogFragment {
     WhitelistConfirmDialog.Whitelist callback;
 
 
-
-
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder WhitelistDialog = new AlertDialog.Builder(getActivity());
@@ -52,6 +50,7 @@ public class WhitelistConfirmDialog extends DialogFragment {
 
 
     }
+
     public void setCallback(WhitelistConfirmDialog.Whitelist callback) {
         this.callback = callback;
     }

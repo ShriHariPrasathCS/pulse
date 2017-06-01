@@ -14,6 +14,18 @@ public class ProfileModule {
     @Expose
     public String Status;
 
+    public String getResult() {
+        return Result;
+    }
+
+    public ArrayList<Details> getDetails() {
+        return details;
+    }
+
+    public String getStatus() {
+        return Status;
+    }
+
     public class Details {
         @Expose
         public String id;
@@ -28,7 +40,7 @@ public class ProfileModule {
         @Expose
         public String device_token;
         @Expose
-        public  String customer_status;
+        public String customer_status;
 
         public String getCustomer_status() {
             return customer_status;
@@ -57,17 +69,5 @@ public class ProfileModule {
         public String getAddress() {
             return address;
         }
-    }
-
-    public String getResult() {
-        return Result;
-    }
-
-    public ArrayList<Details> getDetails() {
-        return details;
-    }
-
-    public String getStatus() {
-        return Status;
     }
 }

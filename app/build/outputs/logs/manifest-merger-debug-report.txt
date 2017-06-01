@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:2:1-116:12
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:2:1-117:12
 	package
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml
@@ -46,7 +46,7 @@ ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:11:5
 	android:name
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:11:19-57
 application
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:13:5-114:19
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:13:5-115:19
 MERGED from [:fontlib-release:] C:\Users\MOHAN\.android\build-cache\ff032861e7abeacf18962934b3306ea11591ce3d\output\AndroidManifest.xml:11:5-14:19
 MERGED from [:fileupload-release:] C:\Users\MOHAN\.android\build-cache\2d981f528c9048cbddb61df590ae11aec0a1d523\output\AndroidManifest.xml:13:5-17:19
 MERGED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\MOHAN\.android\build-cache\2755eba350086ba0de0a7e8a5713a611e3786631\output\AndroidManifest.xml:20:5-32:19
@@ -70,15 +70,15 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\MOHAN\.android
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\MOHAN\.android\build-cache\071a2efa33775ae574d047050d3fb6938b159b7b\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\MOHAN\.android\build-cache\1e6342d088813a77c8095967b30e98a52270b539\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:17:9-41
 	android:supportsRtl
-		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:18:9-35
 	android:hardwareAccelerated
-		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:18:9-44
+		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:15:9-44
 	android:allowBackup
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:16:9-43
 	android:theme
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:19:9-40
 activity#com.pulseplus.SplashActivity
@@ -146,31 +146,31 @@ ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:49:9
 	android:name
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:50:13-53
 activity#com.pulseplus.OrderConfirmationActivity
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:52:9-54:51
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:52:9-54:52
 	android:screenOrientation
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:54:13-49
 	android:name
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:53:13-54
 activity#com.pulseplus.PendingOrdersActivity
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:55:9-57:51
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:55:9-57:52
 	android:screenOrientation
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:57:13-49
 	android:name
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:56:13-50
 activity#com.pulseplus.PendingOrderChat
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:58:9-60:51
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:58:9-60:52
 	android:screenOrientation
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:60:13-49
 	android:name
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:59:13-45
 activity#com.pulseplus.OrderHistoryCart
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:61:9-63:51
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:61:9-63:52
 	android:screenOrientation
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:63:13-49
 	android:name
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:62:13-45
 activity#com.pulseplus.PendingOrderCart
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:64:9-66:51
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:64:9-66:52
 	android:screenOrientation
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:66:13-49
 	android:name
@@ -237,11 +237,11 @@ ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:108:
 	android:name
 		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:108:25-76
 activity#com.pulseplus.WebViewActivity
-ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:112:9-113:51
+ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:112:9-114:52
 	android:screenOrientation
-		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:113:13-49
+		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:114:13-49
 	android:name
-		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:112:19-50
+		ADDED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:113:13-44
 uses-sdk
 INJECTED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [:fontlib-release:] C:\Users\MOHAN\.android\build-cache\ff032861e7abeacf18962934b3306ea11591ce3d\output\AndroidManifest.xml:7:5-9:41
@@ -278,7 +278,7 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\MOHAN\.android\
 		INJECTED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:2:1-116:12 reason: com.armor.fileupload requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\Android\Workspace\Live\pulse\app\src\main\AndroidManifest.xml:2:1-117:12 reason: com.armor.fileupload requested WRITE_EXTERNAL_STORAGE
 MERGED from [com.iceteck.silicompressorr:silicompressor:2.0] C:\Users\MOHAN\.android\build-cache\8ca2a132e3af06b4657bb1bd8b47fb5d41123a88\output\AndroidManifest.xml:11:5-80
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\MOHAN\.android\build-cache\2755eba350086ba0de0a7e8a5713a611e3786631\output\AndroidManifest.xml:24:9-30:19

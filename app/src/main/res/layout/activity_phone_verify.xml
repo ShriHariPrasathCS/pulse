@@ -45,53 +45,53 @@
         android:layout_marginLeft="@dimen/twenty_dp"
         android:layout_marginRight="@dimen/twenty_dp"
         android:layout_marginTop="@dimen/twenty_dp"
-        android:orientation="horizontal"
-        android:background="@drawable/grey_shape">
+        android:background="@drawable/grey_shape"
+        android:orientation="horizontal">
 
         <com.armor.fontlib.CEditText
             android:id="@+id/edtCountry"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:background="@drawable/grey_shape"
             android:focusable="false"
             android:paddingLeft="@dimen/ten_dp"
             android:paddingRight="@dimen/ten_dp"
             android:text="@string/country"
             android:textColor="@color/black"
-            app:fontName="@string/CoreSansA45Regular"
-            android:background="@drawable/grey_shape"/>
+            app:fontName="@string/CoreSansA45Regular" />
 
         <com.armor.fontlib.CEditText
             android:id="@+id/edtPhone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:background="@drawable/grey_shape"
+            android:hint="9842715163"
             android:inputType="phone"
             android:maxLength="10"
             android:paddingLeft="@dimen/ten_dp"
             android:paddingRight="@dimen/ten_dp"
             android:textColor="@color/black"
+            android:textColorHint="@color/grey1"
             android:textCursorDrawable="@null"
-            app:fontName="@string/CoreSansA45Regular"
-            android:background="@drawable/grey_shape"
-            android:hint="9842715163"
-            android:textColorHint="@color/grey1"/>
+            app:fontName="@string/CoreSansA45Regular" />
 
     </LinearLayout>
 
-   <!-- <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/audio_send"
-        android:layout_width="36dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/eighteen_dp"
-        android:layout_marginLeft="@dimen/ten_dp"
-        android:layout_marginStart="@dimen/ten_dp"
-        android:contentDescription="@string/app_name"
-        android:background="@drawable/green_circle"
-        app:srcCompat="@drawable/forward" />
+    <!-- <android.support.v7.widget.AppCompatImageView
+         android:id="@+id/audio_send"
+         android:layout_width="36dp"
+         android:layout_height="40dp"
+         android:layout_gravity="center"
+         android:layout_marginBottom="@dimen/eighteen_dp"
+         android:layout_marginLeft="@dimen/ten_dp"
+         android:layout_marginStart="@dimen/ten_dp"
+         android:contentDescription="@string/app_name"
+         android:background="@drawable/green_circle"
+         app:srcCompat="@drawable/forward" />
 
--->
+ -->
     <com.armor.fontlib.CButton
         android:id="@+id/btn_send"
         android:layout_width="195dp"

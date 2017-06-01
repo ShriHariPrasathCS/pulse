@@ -20,8 +20,8 @@
                 android:id="@+id/homeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/twenty_dp"
-                android:background="@drawable/button_effect">
+                android:background="@drawable/button_effect"
+                android:padding="@dimen/twenty_dp">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -32,10 +32,10 @@
                 <com.armor.fontlib.CTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
                     android:text="@string/Dashboard"
                     android:textColor="@color/white"
-                    android:paddingLeft="20dp"
-                    android:gravity="left"
                     android:textSize="@dimen/eighteen_sp"
                     app:fontName="@string/MyriadPro_Semibold" />
 
@@ -50,8 +50,8 @@
                 android:id="@+id/myAccLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/twenty_dp"
-                android:background="@drawable/button_effect">
+                android:background="@drawable/button_effect"
+                android:padding="@dimen/twenty_dp">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -62,10 +62,10 @@
                 <com.armor.fontlib.CTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
                     android:text="@string/my_account"
                     android:textColor="@color/white"
-                    android:paddingLeft="20dp"
-                    android:gravity="left"
                     android:textSize="@dimen/eighteen_sp"
                     app:fontName="@string/MyriadPro_Semibold" />
             </LinearLayout>
@@ -79,8 +79,8 @@
                 android:id="@+id/orderLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/twenty_dp"
-                android:background="@drawable/button_effect">
+                android:background="@drawable/button_effect"
+                android:padding="@dimen/twenty_dp">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -92,10 +92,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/drawer_menu_selector"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
                     android:text="@string/order_history"
                     android:textColor="@color/white"
-                    android:paddingLeft="20dp"
-                    android:gravity="left"
                     android:textSize="@dimen/eighteen_sp"
                     app:fontName="@string/MyriadPro_Semibold" />
             </LinearLayout>
@@ -109,8 +109,8 @@
                 android:id="@+id/promoLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/twenty_dp"
-                android:background="@drawable/button_effect">
+                android:background="@drawable/button_effect"
+                android:padding="@dimen/twenty_dp">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -122,10 +122,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/drawer_menu_selector"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
                     android:text="@string/promotion"
                     android:textColor="@color/white"
-                    android:paddingLeft="20dp"
-                    android:gravity="left"
                     android:textSize="@dimen/eighteen_sp"
                     app:fontName="@string/MyriadPro_Semibold" />
             </LinearLayout>
@@ -139,8 +139,8 @@
                 android:id="@+id/aboutLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/twenty_dp"
-                android:background="@drawable/button_effect">
+                android:background="@drawable/button_effect"
+                android:padding="@dimen/twenty_dp">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -153,10 +153,10 @@
                     android:id="@+id/radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
                     android:text="@string/about_us"
                     android:textColor="@color/white"
-                    android:paddingLeft="20dp"
-                    android:gravity="left"
                     android:textSize="@dimen/eighteen_sp"
                     app:fontName="@string/MyriadPro_Semibold" />
             </LinearLayout>
@@ -169,15 +169,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/button_effect">
+                android:background="@drawable/button_effect"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:id="@+id/help_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="20dp"
-                    android:background="@drawable/button_effect">
+                    android:background="@drawable/button_effect"
+                    android:padding="20dp">
 
                     <ImageView
                         android:layout_width="25dp"
@@ -188,10 +188,10 @@
                     <com.armor.fontlib.CTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingEnd="2dp"
-                        android:paddingRight="2dp"
-                        android:paddingLeft="20dp"
                         android:gravity="left"
+                        android:paddingEnd="2dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="2dp"
                         android:text="@string/help"
                         android:textColor="@color/white"
                         android:textSize="@dimen/eighteen_sp"

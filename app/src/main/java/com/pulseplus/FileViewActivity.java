@@ -28,20 +28,19 @@ import uk.co.senab.photoview.PhotoViewAttacher;
 
 public class FileViewActivity extends AppCompatActivity {
 
-    private ProgressBar progressBar;
-    private ImageView imageView;
-    private Toolbar toolbar;
-    private String imageUrl, audioUrl;
-    private PhotoViewAttacher attacher;
+    public AppCompatSeekBar seekBar;
+    public ImageView imageViewMe, imgPlayMe, imgPauseMe;
+    public LinearLayout leftLayout, rightLayout, playLayout;
     MediaPlayer player = new MediaPlayer();
     MediaPlayerListener listener;
     boolean playing = true;
     TextView audio_time;
     ProgressDialog p;
-    public AppCompatSeekBar seekBar;
-    public ImageView imageViewMe, imgPlayMe, imgPauseMe;
-    public LinearLayout leftLayout, rightLayout, playLayout;
-
+    private ProgressBar progressBar;
+    private ImageView imageView;
+    private Toolbar toolbar;
+    private String imageUrl, audioUrl;
+    private PhotoViewAttacher attacher;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -71,7 +70,7 @@ public class FileViewActivity extends AppCompatActivity {
         imgPauseMe = (ImageView) findViewById(R.id.imgPauseMe);
         seekBar = (AppCompatSeekBar) findViewById(R.id.seekBar);
         playLayout = (LinearLayout) findViewById(R.id.playLayout);
-        audio_time = (TextView)findViewById(R.id.audio_time);
+        audio_time = (TextView) findViewById(R.id.audio_time);
         p = Global.initProgress(this);
 
 
@@ -83,7 +82,7 @@ public class FileViewActivity extends AppCompatActivity {
         if (toolbar != null) {
             if (imageUrl != null) {
                 toolbar.setTitle("Image Preview");
-            }else {
+            } else {
                 toolbar.setTitle("Audio File");
             }
             toolbar.setNavigationIcon(R.drawable.ic_back_arrow);
@@ -126,7 +125,7 @@ public class FileViewActivity extends AppCompatActivity {
 
                 attacher = new PhotoViewAttacher(imageView);
                 attacher.update();
-               // Global.dismissProgress(p);
+                // Global.dismissProgress(p);
                 p.dismiss();
             }
 
@@ -183,7 +182,6 @@ public class FileViewActivity extends AppCompatActivity {
         };
 
 
-
         imgPlayMe.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -238,9 +236,9 @@ public class FileViewActivity extends AppCompatActivity {
                 stopPlayer();
                 if (!playing) {
                     player.seekTo(0);
-                seekBar.setProgress(0);
-                imgPlayMe.setVisibility(View.VISIBLE);
-                imgPauseMe.setVisibility(View.GONE);
+                    seekBar.setProgress(0);
+                    imgPlayMe.setVisibility(View.VISIBLE);
+                    imgPauseMe.setVisibility(View.GONE);
                     playing = true;
                 } else {
                     playing = false;

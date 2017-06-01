@@ -25,7 +25,7 @@ import retrofit2.Response;
  * Bright Bridge on 25-Apr-17.
  */
 
-public class OrderHistoryCart extends AppCompatActivity implements CartListViewAdapter.CartListener{
+public class OrderHistoryCart extends AppCompatActivity implements CartListViewAdapter.CartListener {
 
     ArrayList<Cart.CartList> cartlist;
     String tot;

@@ -14,6 +14,22 @@ public class ChatBean {
     @Expose
     public ArrayList<Details> details;
 
+    public String getResult() {
+        return Result;
+    }
+
+    public String getStatus() {
+        return Status;
+    }
+
+    public ArrayList<Details> getDetails() {
+        return details;
+    }
+
+    public String getChat_status() {
+        return chat_status;
+    }
+
     public class Details {
         @Expose
         public String id;
@@ -99,21 +115,5 @@ public class ChatBean {
         public String getUpdated_date() {
             return updated_date;
         }
-    }
-
-    public String getResult() {
-        return Result;
-    }
-
-    public String getStatus() {
-        return Status;
-    }
-
-    public ArrayList<Details> getDetails() {
-        return details;
-    }
-
-    public String getChat_status() {
-        return chat_status;
     }
 }

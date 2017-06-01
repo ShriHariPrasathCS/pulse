@@ -49,7 +49,6 @@ public class PendingOrdersListviewAdapter extends ArrayAdapter {
     }
 
 
-
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
@@ -76,22 +75,22 @@ public class PendingOrdersListviewAdapter extends ArrayAdapter {
             @Override
             public void onClick(View view) {
                 Orderid = pendingOrder.get(position).getOrderid();
-              //  Orderid = PrefConnect.readString(context, PrefConnect.ORDER_ID, "");
+                //  Orderid = PrefConnect.readString(context, PrefConnect.ORDER_ID, "");
                 Call<ContinuePendingOrder> call = apiService.continuePendingOrder(Orderid);
                 call.enqueue(new Callback<ContinuePendingOrder>() {
                     @Override
                     public void onResponse(Call<ContinuePendingOrder> call, Response<ContinuePendingOrder> response) {
                         if (response.isSuccessful()) {
-                         //   Global.dismissProgress(p);
+                            //   Global.dismissProgress(p);
                             ContinuePendingOrder continuePendingOrder = response.body();
                             if (continuePendingOrder.getResult().equalsIgnoreCase("Success")) {
-                               // Global.CustomToast(context, continuePendingOrder.getStatus());
+                                // Global.CustomToast(context, continuePendingOrder.getStatus());
                                 PrefConnect.writeString(context, PrefConnect.ORDER_ID, Orderid);
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        dbHelper.deleteOrderHistory(Orderid);
-                                   //     dbHelper.deletePendingOrderHistory(Orderid);
+                                        dbHelper.deleteOrder(Orderid);
+                                        //     dbHelper.deletePendingOrderHistory(Orderid);
                                     }
                                 }, 5000);
                                 Intent i = new Intent(context, OrderChatActivity.class);

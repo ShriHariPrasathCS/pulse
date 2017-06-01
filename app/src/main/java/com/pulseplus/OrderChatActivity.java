@@ -338,7 +338,7 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                             chatEnd = true;
                         } else {
                             setAdapter(chatBean);
-                            setPendingAdapter(chatBean);
+//                            setPendingAdapter(chatBean);
                         }
                     }
                 }
@@ -377,29 +377,29 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         }
     }
 
-    private void setPendingAdapter(ChatBean chatBean) {
-        groupList = new ArrayList<>();
-        group = new Group();
-        childList = new ArrayList<>();
-        for (ChatBean.Details details : chatBean.getDetails()) {
-            Child child = new Child(details.getChat_usertype(), details.getMessage_type(), details.getMessage(), details.getSent_date());
-            childList.add(child);
-            dbHelper.insertPendingOrder(orderId, details.getChat_usertype(), details.getMessage_type(), details.getMessage(), details.getSent_date());
-        }
-
-        fromId = chatBean.getDetails().get(0).getFrom_id();
-
-        PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, childList.size());
-
-        group.setChildren(childList);
-        groupList.add(group);
-
-        adapter = new MessageAdapter(OrderChatActivity.this, groupList, this);
-        listView.setAdapter(adapter);
-        expandAll();
-        listView.setSelection(childList.size());
-
-    }
+//    private void setPendingAdapter(ChatBean chatBean) {
+//        groupList = new ArrayList<>();
+//        group = new Group();
+//        childList = new ArrayList<>();
+//        for (ChatBean.Details details : chatBean.getDetails()) {
+//            Child child = new Child(details.getChat_usertype(), details.getMessage_type(), details.getMessage(), details.getSent_date());
+//            childList.add(child);
+//            dbHelper.insertPendingOrder(orderId, details.getChat_usertype(), details.getMessage_type(), details.getMessage(), details.getSent_date());
+//        }
+//
+//        fromId = chatBean.getDetails().get(0).getFrom_id();
+//
+//        PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, childList.size());
+//
+//        group.setChildren(childList);
+//        groupList.add(group);
+//
+//        adapter = new MessageAdapter(OrderChatActivity.this, groupList, this);
+//        listView.setAdapter(adapter);
+//        expandAll();
+//        listView.setSelection(childList.size());
+//
+//    }
 
     private void expandAll() {
         int count = adapter.getGroupCount();
@@ -722,7 +722,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
 
 
     public void confirmation() {
-
         ConfirmationDialog dialog = new ConfirmationDialog();
         dialog.setCallback(new ConfirmationDialog.ConfirmationCallback() {
             @Override
@@ -745,8 +744,8 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        dbHelper.deleteOrderHistory(orderId);
-                                        dbHelper.deletePendingOrderHistory(orderId);
+                                        dbHelper.deleteOrder(orderId);
+//                                        dbHelper.deletePendingOrderHistory(orderId);
                                     }
                                 }, 4000);
 
@@ -785,13 +784,13 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
 
                                 getmService().xmpp.sendMessage("Order has been saved to cart", jid, "3", getDate());
                                 PrefConnect.writeString(OrderChatActivity.this, PrefConnect.TO_JID, "");
-                                dbHelper.deleteOrderHistory(orderId);
+                                dbHelper.saveToPendingOrder(orderId);
                                 //  PrefConnect.writeString(OrderChatActivity.this, PrefConnect.ORDER_ID, "");
 
 //                                handler.postDelayed(new Runnable() {
 //                                    @Override
 //                                    public void run() {
-//                                        dbHelper.deleteOrderHistory(orderId);
+//                                        dbHelper.deleteOrder(orderId);
 //                                    }
 //                                }, 5000);
                                 finish();
@@ -889,9 +888,9 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         imgView.setVisibility(View.VISIBLE);
         edtLayout.setVisibility(View.GONE);
         btnLayout.setVisibility(View.VISIBLE);
-        dbHelper.deletePendingOrderHistory(orderId);
+        //TODO dbHelper.deletePendingOrderHistory(orderId);
         chatEnd = true;
-        //dbHelper.deleteOrderHistory(orderId);
+        //dbHelper.deleteOrder(orderId);
     }
 
     public void adminEnd() {
@@ -899,8 +898,7 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         edtLayout.setVisibility(View.GONE);
         btnLayout.setVisibility(View.VISIBLE);
         chatEnd = true;
-        dbHelper.deleteOrderHistory(orderId);
-        dbHelper.deletePendingOrderHistory(orderId);
+        dbHelper.deleteOrder(orderId);
     }
 
     public void slotEnd() {
@@ -991,8 +989,8 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                             intent.removeExtra("type");
                             Global.BROADCAST = false;
 
-                            if (body != null && !body.equalsIgnoreCase("Order has been saved to cart"))
-                                dbHelper.insertPendingOrder(orderId, Global.RECE, type, body, getDate());
+//                            if (body != null && !body.equalsIgnoreCase("Order has been saved to cart"))
+//                                dbHelper.insertPendingOrder(orderId, Global.RECE, type, body, getDate());
                             dbHelper.insertOrderHistory(orderId, Global.RECE, type, body, getDate());
 
 
@@ -1033,9 +1031,9 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                         intent.removeExtra("type");
                         Global.BROADCAST = false;
                         String jid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
-                        if (bodySend != null && !bodySend.equalsIgnoreCase("Order has been saved to cart") && !TextUtils.isEmpty(jid))
-                            dbHelper.insertOrderHistory(orderId, Global.SEND, typeSend, bodySend, getDate());
-                        dbHelper.insertPendingOrder(orderId, Global.SEND, typeSend, bodySend, getDate());
+//                        if (bodySend != null && !bodySend.equalsIgnoreCase("Order has been saved to cart") && !TextUtils.isEmpty(jid))
+                        dbHelper.insertOrderHistory(orderId, Global.SEND, typeSend, bodySend, getDate());
+//                        dbHelper.insertPendingOrder(orderId, Global.SEND, typeSend, bodySend, getDate());
 
 //                        if (bodySend != null && (bodySend.equalsIgnoreCase("Selected Morning Slot") || bodySend.equalsIgnoreCase("Selected Evening Slot"))) {
 //                            endChat();

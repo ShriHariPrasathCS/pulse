@@ -88,7 +88,7 @@ public class Register {
         @Expose
         public String jid_password;
         @Expose
-        public  String customer_status;
+        public String customer_status;
 
 
         public String getCustomer_status() {

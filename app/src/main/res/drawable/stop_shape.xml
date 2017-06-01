@@ -11,7 +11,11 @@
         </shape>
     </item>
 
-    <item android:drawable="@drawable/stop" android:width="40dp" android:height="40dp" android:gravity="center"/>
+    <item
+        android:width="40dp"
+        android:height="40dp"
+        android:drawable="@drawable/stop"
+        android:gravity="center" />
 
 
 </layer-list>

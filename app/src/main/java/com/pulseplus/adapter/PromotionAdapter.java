@@ -82,12 +82,12 @@ public class PromotionAdapter extends ArrayAdapter {
                                 // getmService().xmpp.sendMessage("Customer has cancelled the order", jid, "3", getDate());
 
                                 PrefConnect.readString(getContext(), PrefConnect.USER_ID, "");
-                              //  Toast.makeText(context, "Offer has updated successfully", Toast.LENGTH_LONG).show();
-                                Global.CustomToast((Activity) context,"Offer has updated successfully");
+                                //  Toast.makeText(context, "Offer has updated successfully", Toast.LENGTH_LONG).show();
+                                Global.CustomToast((Activity) context, "Offer has updated successfully");
                                 // finish();
                             } else {
                                 //Global.CustomToast(PromotionAdapter.this, orderCancel.getStatus());
-                                Global.CustomToast((Activity) context,"failed");
+                                Global.CustomToast((Activity) context, "failed");
                             }
                         }
                     }

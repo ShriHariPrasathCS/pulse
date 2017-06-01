@@ -11,11 +11,11 @@ import com.pulseplus.xmpp.XmppConnect;
 
 public class XmppService extends Service {
 
-    public static ConnectivityManager cm;
-    public static XmppConnect xmpp;
     public static final String NEW_MESSAGE = "com.pulseplus.newmessage";
     public static final String SEND_MESSAGE = "com.pulseplus.sendmessage";
     public static final String BANNED_MESSAGE = "com.pulseplus.bannedmessage";
+    public static ConnectivityManager cm;
+    public static XmppConnect xmpp;
 
     public static boolean isNetworkConnected() {
         return cm.getActiveNetworkInfo() != null;

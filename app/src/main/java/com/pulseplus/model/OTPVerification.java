@@ -1,9 +1,6 @@
 package com.pulseplus.model;
 
-import android.telecom.Call;
-
 import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.Since;
 
 public class OTPVerification {
     @Expose
@@ -18,6 +15,8 @@ public class OTPVerification {
 
     public class Result {
         @Expose
+        public Details details;
+        @Expose
         String Result;
         @Expose
         String Status;
@@ -25,9 +24,6 @@ public class OTPVerification {
         public Details getDetails() {
             return details;
         }
-
-        @Expose
-        public Details details;
 
         public String getResult() {
             return Result;

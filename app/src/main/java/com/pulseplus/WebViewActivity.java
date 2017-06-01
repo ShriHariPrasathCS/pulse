@@ -13,10 +13,10 @@ import com.pulseplus.global.Global;
  * Bright Bridge on 03-Jan-17.
  */
 
-public class WebViewActivity extends ActionBarActivity{
+public class WebViewActivity extends ActionBarActivity {
     android.webkit.WebView myWebView;
     ProgressDialog p;
-  //  private Toolbar toolbar;
+    //  private Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,11 +25,11 @@ public class WebViewActivity extends ActionBarActivity{
 
         init();
         Setwebview();
-      //  setToolBar();
+        //  setToolBar();
     }
 
     private void init() {
-       // toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // toolbar = (Toolbar) findViewById(R.id.toolbar);
         p = Global.initProgress(WebViewActivity.this);
     }
 

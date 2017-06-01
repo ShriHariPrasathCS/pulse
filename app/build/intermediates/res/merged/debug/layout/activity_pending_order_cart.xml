@@ -19,8 +19,8 @@
             android:gravity="center"
             android:padding="5dp"
             android:text="@string/cart_title"
-            android:textSize="25sp"
-            android:textColor="@color/green" />
+            android:textColor="@color/green"
+            android:textSize="25sp" />
 
 
     </LinearLayout>
@@ -45,8 +45,8 @@
         android:layout_height="70dp"
         android:layout_gravity="bottom"
         android:layout_weight="2"
-        android:gravity="bottom"
         android:background="@color/green"
+        android:gravity="bottom"
         android:weightSum="2">
 
         <Button
@@ -54,9 +54,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="15sp"
             android:background="@color/circle_green"
-            android:text="@string/continue_order" />
+            android:text="@string/continue_order"
+            android:textSize="15sp" />
 
 
         <TextView
@@ -64,11 +64,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:textSize="17sp"
             android:background="@color/green"
+            android:gravity="center"
+            android:text=""
             android:textColor="@color/white"
-            android:text="" />
+            android:textSize="17sp" />
 
     </LinearLayout>
 

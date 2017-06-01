@@ -50,7 +50,7 @@ public class OrderHistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_order_history, container, false);
         init(view);
-       // p.show();
+        // p.show();
         showList();
         setListner();
         return view;
@@ -143,7 +143,7 @@ public class OrderHistoryFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-       // p.show();
+        // p.show();
         // loadData();
 
     }

@@ -19,21 +19,6 @@ public class EditProfile {
         this.address = address;
     }
 
-    public class Result {
-        @Expose
-        public String Result;
-        @Expose
-        public String Status;
-
-        public String getResult() {
-            return Result;
-        }
-
-        public String getStatus() {
-            return Status;
-        }
-    }
-
     public String getName() {
         return name;
     }
@@ -48,5 +33,20 @@ public class EditProfile {
 
     public String getAddress() {
         return address;
+    }
+
+    public class Result {
+        @Expose
+        public String Result;
+        @Expose
+        public String Status;
+
+        public String getResult() {
+            return Result;
+        }
+
+        public String getStatus() {
+            return Status;
+        }
     }
 }

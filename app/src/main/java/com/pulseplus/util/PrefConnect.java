@@ -19,14 +19,13 @@ public class PrefConnect {
     public static final String OFFERCODE = "OFFERCODE";
     public static final String NAME = "NAME";
     public static final String EMAIL = "EMAIL";
-    public static final String ADDRESS ="ADDRESS" ;
+    public static final String ADDRESS = "ADDRESS";
     public static final String JID = "JID";
     public static final String JID_PASS = "JID_PASS";
     public static final String TO_JID = "TO_JID";
     public static final String DEVICE_TOKEN = "DEVICE_TOKEN";
     public static final String UDID = "UDID";
     public static final String ID = "Id";
-
 
 
     public static void clearAllPrefs(Context context) {

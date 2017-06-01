@@ -22,8 +22,7 @@ public class RetrofitSingleton {
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create());
 
-    public static <T> T createService(Class<T> serviceClass)
-    {
+    public static <T> T createService(Class<T> serviceClass) {
         //Set Logging
         if (logging == null) {
             logging = new HttpLoggingInterceptor();

@@ -11,5 +11,9 @@
         </shape>
     </item>
 
-    <item android:drawable="@drawable/play" android:width="40dp" android:height="40dp" android:gravity="center"/>
+    <item
+        android:width="40dp"
+        android:height="40dp"
+        android:drawable="@drawable/play"
+        android:gravity="center" />
 </layer-list>

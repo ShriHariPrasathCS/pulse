@@ -11,7 +11,11 @@
         </shape>
     </item>
 
-    <item android:drawable="@drawable/send" android:width="30dp" android:height="30dp" android:gravity="center"/>
+    <item
+        android:width="30dp"
+        android:height="30dp"
+        android:drawable="@drawable/send"
+        android:gravity="center" />
 
 
 </layer-list>

@@ -16,6 +16,14 @@ public class Promotion {
     @Expose
     public String Result;
 
+    public ArrayList<Promotion.promotion> getPromotion() {
+        return promotion;
+    }
+
+    public String getResult() {
+        return Result;
+    }
+
     public class promotion {
         @Expose
         public String id;
@@ -77,13 +85,5 @@ public class Promotion {
         public String getOffer_code() {
             return offer_code;
         }
-    }
-
-    public ArrayList<Promotion.promotion> getPromotion() {
-        return promotion;
-    }
-
-    public String getResult() {
-        return Result;
     }
 }

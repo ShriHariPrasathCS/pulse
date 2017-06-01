@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
@@ -32,6 +33,7 @@ import retrofit2.Response;
  */
 
 public class PendingOrderChat extends AppCompatActivity {
+
     String orderID, ord;
     String Orderid, ORDERID;
     ImageView cart_imageView;
@@ -78,7 +80,7 @@ public class PendingOrderChat extends AppCompatActivity {
     public void showList() {
         DBHelper dbHelper = DBHelper.getInstance(PendingOrderChat.this);
         // orderID = getIntent().getStringExtra("orderId");
-        groupList = dbHelper.getPendingOrders(orderID);
+        groupList = dbHelper.getOrders(orderID);
         adapter = new PendingOrderChatAdapter(PendingOrderChat.this, groupList);
         listView.setAdapter(adapter);
         expandAll();
@@ -90,7 +92,7 @@ public class PendingOrderChat extends AppCompatActivity {
 
         for (Group group : groupList) {
             for (Child child : group.getChildren()) {
-                if (child.getMessage().equals("Your Order has been generated. Please view the cart")) {
+                if (!TextUtils.isEmpty(child.getMessage()) && child.getMessage().equals("Your Order has been generated. Please view the cart")) {
                     cart_imageView.setVisibility(View.VISIBLE);
                 }
             }
@@ -156,20 +158,12 @@ public class PendingOrderChat extends AppCompatActivity {
                                 Global.CustomToast(PendingOrderChat.this, continuePendingOrder.getStatus());
                                 PrefConnect.writeString(PendingOrderChat.this, PrefConnect.TO_JID, "");
                                 PrefConnect.writeString(PendingOrderChat.this, PrefConnect.ORDER_ID, orderID);
-                              //  dbHelper.insertPendingOrder(orderID, "3", "3", "","");
+                                //  dbHelper.insertPendingOrder(orderID, "3", "3", "","");
 
+                                dbHelper.saveToNormalOrder(orderID);
                                 Intent i = new Intent(PendingOrderChat.this, OrderChatActivity.class);
                                 startActivity(i);
-
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        dbHelper.deleteOrderHistory(orderID);
-                                        dbHelper.deletePendingOrderHistory(orderID);
-                                    }
-                                }, 5000);
                                 finish();
-
                             } else {
                                 Global.CustomToast(PendingOrderChat.this, continuePendingOrder.getStatus());
                             }

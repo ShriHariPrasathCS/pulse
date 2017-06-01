@@ -8,7 +8,7 @@ import com.google.gson.annotations.Expose;
 
 public class CartMedicineDelete {
 
-    public static class Response{
+    public static class Response {
         @Expose
         public String Result;
         @Expose
@@ -23,7 +23,7 @@ public class CartMedicineDelete {
         }
     }
 
-    public static class Request{
+    public static class Request {
         @Expose
         public String orderid;
         @Expose

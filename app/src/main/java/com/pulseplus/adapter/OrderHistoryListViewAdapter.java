@@ -1,6 +1,7 @@
 package com.pulseplus.adapter;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +14,7 @@ import com.pulseplus.model.OrderHistory;
 
 import java.util.ArrayList;
 
-public class OrderHistoryListViewAdapter extends ArrayAdapter {
+public class OrderHistoryListViewAdapter extends ArrayAdapter<OrderHistory.Order_history> {
     LayoutInflater inflater;
     Context context;
     ArrayList<OrderHistory.Order_history> orderHistory;
@@ -26,6 +27,7 @@ public class OrderHistoryListViewAdapter extends ArrayAdapter {
 
     }
 
+    @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 

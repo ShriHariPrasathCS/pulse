@@ -41,13 +41,13 @@ public class OrderHistorychatAdapter extends BaseExpandableListAdapter {
     private static final String AUDIO = "2";
     MediaPlayer player = new MediaPlayer();
     MediaPlayerListener listener;
+    boolean playing = true;
     private LayoutInflater inflater;
     private Activity context;
     private ArrayList<Group> groupList;
     private File imageFile;
     private String imageUrl, audioUrl;
-    boolean playing = true;
-   // ProgressBar progressBar;
+    // ProgressBar progressBar;
 
 
     public OrderHistorychatAdapter(Activity context, ArrayList<Group> groupList) {
@@ -143,7 +143,7 @@ public class OrderHistorychatAdapter extends BaseExpandableListAdapter {
             holder.playLayout = (LinearLayout) convertView.findViewById(R.id.playLayout);
             holder.imgView = (ImageView) convertView.findViewById(R.id.imgView);
 
-          //  progressBar = (ProgressBar) convertView.findViewById(R.id.imageProgress);
+            //  progressBar = (ProgressBar) convertView.findViewById(R.id.imageProgress);
 
             convertView.setTag(holder);
         } else {
@@ -179,7 +179,7 @@ public class OrderHistorychatAdapter extends BaseExpandableListAdapter {
             holder.txtTime.setText(msgDate);
             holder.playLayoutLeft.setVisibility(View.GONE);
             holder.imageViewMeLeft.setVisibility(View.GONE);
-           // progressBar.setVisibility(View.GONE);
+            // progressBar.setVisibility(View.GONE);
 
         } else if (type.equalsIgnoreCase(IMAGE)) {
             holder.txtDesc.setVisibility(View.GONE);
@@ -217,7 +217,7 @@ public class OrderHistorychatAdapter extends BaseExpandableListAdapter {
             holder.imageViewMeLeft.setVisibility(View.GONE);
             //holder.txtDesc.setText(child.getMessage());
             holder.txtTime.setText(msgDate);
-          //  progressBar.setVisibility(View.GONE);
+            //  progressBar.setVisibility(View.GONE);
 
             holder.playLayoutLeft.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -283,7 +283,7 @@ public class OrderHistorychatAdapter extends BaseExpandableListAdapter {
                 holder.playLayout.setVisibility(View.GONE);
                 holder.txtDescMe.setText(child.getMessage());
                 holder.txtTimeMe.setText(msgDate);
-              //  progressBar.setVisibility(View.GONE);
+                //  progressBar.setVisibility(View.GONE);
                 break;
             case IMAGE:
                 holder.imageViewMe.setVisibility(View.VISIBLE);
@@ -318,7 +318,7 @@ public class OrderHistorychatAdapter extends BaseExpandableListAdapter {
                 holder.playLayout.setVisibility(View.VISIBLE);
                 holder.txtDescMe.setVisibility(View.GONE);
                 holder.txtTimeMe.setText(msgDate);
-             //   progressBar.setVisibility(View.GONE);
+                //   progressBar.setVisibility(View.GONE);
 
 
                 /*holder.playLayout.setOnClickListener(new View.OnClickListener() {

@@ -43,6 +43,7 @@ import org.greenrobot.eventbus.ThreadMode;
 public class MainActivity extends AppCompatActivity implements DrawerFragment.NavigationDrawerCallBack, RegisterDialog.RegisterCallback, BanConfirmDialog.BanCallback {
 
     private static final String TAG = MainActivity.class.getName();
+    boolean doubleBackToExitPressedOnce = false;
     private Toolbar toolbar;
     private DrawerFragment drawerFragment;
     private String mTitle;
@@ -55,7 +56,6 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
     private RegStatusService regStatusService;
     private BandXmppReciever recieverBanned;
     private boolean bound = false;
-
     private ServiceConnection regConnect = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
@@ -70,8 +70,6 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
             bound = false;
         }
     };
-
-
     private ServiceConnection connection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
@@ -240,17 +238,11 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onInternetConnectionCheck(Internet internet) {
         if (internet.isConnected) {
-          //  Global.CustomToast(MainActivity.this, "Internet Avaliable");
+            //  Global.CustomToast(MainActivity.this, "Internet Avaliable");
         } else {
             Global.CustomToast(MainActivity.this, "Check your internet connection");
             //Global.Toast(MainActivity.this, "Check your internet connection");
         }
-    }
-
-
-    @Override
-    public void onAcceptBanned() {
-        finish();
     }
 /*
     private void startRegStatusService() {
@@ -268,29 +260,9 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
         }
     }*/
 
-
-    private class StatusReceiver extends BroadcastReceiver {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent.getBooleanExtra("showDialog", false)) {
-                if (bound) {
-                    unbindService(regConnect);
-                    bound = false;
-                }
-                registerDialog = new RegisterDialog();
-                registerDialog.setCallback(MainActivity.this);
-                registerDialog.setCancelable(false);
-                registerDialog.show(getSupportFragmentManager(), "Confirm");
-            } else if (intent.getBooleanExtra("setListener", false)) {
-                HomeFragment fragment = (HomeFragment) getSupportFragmentManager().findFragmentByTag("HomeFragment");
-                if (fragment != null) {
-                    fragment.setListener();
-                }
-            } else if (intent.getBooleanExtra("banned", false)) {
-                BanConfirmation();
-            }
-        }
+    @Override
+    public void onAcceptBanned() {
+        finish();
     }
 
     void doBindService() {
@@ -312,8 +284,6 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
     public XmppService getmService() {
         return xmppService;
     }
-
-    boolean doubleBackToExitPressedOnce = false;
 
     @Override
     public void onBackPressed() {
@@ -342,6 +312,30 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
         bandialog.setCallback(this);
         bandialog.show(getFragmentManager(), "");
 
+    }
+
+    private class StatusReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getBooleanExtra("showDialog", false)) {
+                if (bound) {
+                    unbindService(regConnect);
+                    bound = false;
+                }
+                registerDialog = new RegisterDialog();
+                registerDialog.setCallback(MainActivity.this);
+                registerDialog.setCancelable(false);
+                registerDialog.show(getSupportFragmentManager(), "Confirm");
+            } else if (intent.getBooleanExtra("setListener", false)) {
+                HomeFragment fragment = (HomeFragment) getSupportFragmentManager().findFragmentByTag("HomeFragment");
+                if (fragment != null) {
+                    fragment.setListener();
+                }
+            } else if (intent.getBooleanExtra("banned", false)) {
+                BanConfirmation();
+            }
+        }
     }
 
     public class BandXmppReciever extends BroadcastReceiver {

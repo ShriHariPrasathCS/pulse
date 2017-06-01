@@ -29,13 +29,10 @@ import retrofit2.Response;
 
 public class ContactUsFragment extends Fragment {
     View view;
+    APIService apiService;
     private CEditText edtMsg, edtEmail;
     private Button btnSend;
     private boolean error;
-    APIService apiService;
-
-
-
 
     @Nullable
     @Override
@@ -89,7 +86,7 @@ public class ContactUsFragment extends Fragment {
 
     private void validation() {
         String email = edtEmail.getText().toString();
-        if (!email.equals(" ") && !email.matches( "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")) {
+        if (!email.equals(" ") && !email.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")) {
             Global.CustomToast(getActivity(), "Enter valid EmailId");
             error = true;
         } else if (edtMsg.getText().toString().equals("")) {
@@ -129,7 +126,7 @@ public class ContactUsFragment extends Fragment {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onInternetConnectionCheck(Internet internet) {
         if (internet.isConnected) {
-         //   Global.CustomToast(getActivity(), "Internet Avaliable");
+            //   Global.CustomToast(getActivity(), "Internet Avaliable");
         } else {
             Global.CustomToast(getActivity(), "Check your internet connection");
             //Global.Toast(MainActivity.this, "Check your internet connection");

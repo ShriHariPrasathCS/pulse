@@ -11,11 +11,11 @@ public class Internet {
         this.isConnected = isConnected;
     }
 
-    public void setConnected(boolean connected) {
-        isConnected = connected;
-    }
-
     public boolean isConnected() {
         return isConnected;
+    }
+
+    public void setConnected(boolean connected) {
+        isConnected = connected;
     }
 }

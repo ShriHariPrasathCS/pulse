@@ -38,12 +38,11 @@ import static android.content.ContentValues.TAG;
  */
 
 public class PromotionFragment extends Fragment {
-    private ListView promotion_list;
     ArrayList<Promotion.promotion> promotion_listview;
+    View view;
+    private ListView promotion_list;
     private APIService apiService;
     private PromotionAdapter promotionAdapter;
-
-    View view;
 
     @Nullable
     @Override

@@ -23,7 +23,7 @@ public class Cart {
         return cart_list;
     }
 
-    public static class CartList{
+    public static class CartList {
 
         @Expose
         public String id;
@@ -42,68 +42,68 @@ public class Cart {
         @Expose
         public String updated_date;
 
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public void setUserid(String userid) {
-            this.userid = userid;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public void setQty(String qty) {
-            this.qty = qty;
-        }
-
-        public void setPrice(String price) {
-            this.price = price;
-        }
-
-        public void setTotal(String total) {
-            this.total = total;
-        }
-
-        public void setAdded_date(String added_date) {
-            this.added_date = added_date;
-        }
-
-        public void setUpdated_date(String updated_date) {
-            this.updated_date = updated_date;
-        }
-
         public String getId() {
             return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
         }
 
         public String getUserid() {
             return userid;
         }
 
+        public void setUserid(String userid) {
+            this.userid = userid;
+        }
+
         public String getName() {
             return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
         }
 
         public String getQty() {
             return qty;
         }
 
+        public void setQty(String qty) {
+            this.qty = qty;
+        }
+
         public String getPrice() {
             return price;
+        }
+
+        public void setPrice(String price) {
+            this.price = price;
         }
 
         public String getTotal() {
             return total;
         }
 
+        public void setTotal(String total) {
+            this.total = total;
+        }
+
         public String getAdded_date() {
             return added_date;
         }
 
+        public void setAdded_date(String added_date) {
+            this.added_date = added_date;
+        }
+
         public String getUpdated_date() {
             return updated_date;
+        }
+
+        public void setUpdated_date(String updated_date) {
+            this.updated_date = updated_date;
         }
     }
 

@@ -113,14 +113,14 @@ public class ScheduleOrder extends DialogFragment {
                             final MorningDelivery morningdelivery = response.body();
                             if (morningdelivery.getResult().equalsIgnoreCase("Success")) {
                                 //   Global.CustomToast(getActivity(), morningdelivery.getStatus());
-                               //    String jid = PrefConnect.readString(getActivity(), PrefConnect.TO_JID, "");
+                                //    String jid = PrefConnect.readString(getActivity(), PrefConnect.TO_JID, "");
 
                                 getmService().xmpp.sendMessage("Your order has been confirmed,it will be delivered by 6-10AM", toJid, "3", getDate());
 
                                 if (callback != null) {
                                     callback.onMorningClicked();
                                 }
-                                dbHelper.deletePendingOrderHistory(orderId);
+                                //TODO dbHelper.deletePendingOrderHistory(orderId);
                                 ////    PrefConnect.writeString(getActivity(), PrefConnect.TO_JID, "");
 
 
@@ -165,7 +165,7 @@ public class ScheduleOrder extends DialogFragment {
                                 if (callback != null) {
                                     callback.onEveningClicked();
                                 }
-                                dbHelper.deletePendingOrderHistory(orderId);
+                                //TODO dbHelper.deletePendingOrderHistory(orderId);
                                 //   PrefConnect.writeString(OrderChatActivity.this, PrefConnect.TO_JID, "");
                                 //  PrefConnect.writeString(OrderChatActivity.this, PrefConnect.ORDER_ID, "");
 
@@ -195,7 +195,7 @@ public class ScheduleOrder extends DialogFragment {
         edtLayout.setVisibility(View.GONE);
         btnLayout.setVisibility(View.VISIBLE);
         chatEnd = true;
-        //dbHelper.deleteOrderHistory(orderId);
+        //dbHelper.deleteOrder(orderId);
     }
 
     private void init(View view) {

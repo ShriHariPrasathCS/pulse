@@ -23,8 +23,8 @@ import java.io.File;
 
 public class PhotoDialog extends DialogFragment implements View.OnClickListener {
 
-    private Uri imageUri = null;
     public ImageListener listener;
+    private Uri imageUri = null;
 
     @NonNull
     @Override

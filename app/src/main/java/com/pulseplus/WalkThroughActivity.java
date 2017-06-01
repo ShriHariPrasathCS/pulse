@@ -18,12 +18,12 @@ import java.util.ArrayList;
 
 public class WalkThroughActivity extends AppCompatActivity {
 
+    private static final int PERMISSION_REQUEST = 1235;
     ArrayList<Integer> views;
     ViewPager viewPager;
     CustomPager adapter;
     TextView textView;
     LinearLayout indicatorLayout;
-    private static final int PERMISSION_REQUEST = 1235;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

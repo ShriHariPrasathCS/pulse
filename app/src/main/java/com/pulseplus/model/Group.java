@@ -11,12 +11,12 @@ public class Group {
         return date;
     }
 
-    public ArrayList<Child> getChildren() {
-        return children;
-    }
-
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public ArrayList<Child> getChildren() {
+        return children;
     }
 
     public void setChildren(ArrayList<Child> children) {

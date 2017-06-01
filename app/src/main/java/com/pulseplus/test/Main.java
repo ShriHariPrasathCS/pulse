@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 
-import com.armor.fontlib.CEditText;
 import com.pulseplus.R;
 
 /**

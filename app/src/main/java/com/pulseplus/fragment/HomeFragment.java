@@ -131,7 +131,7 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu_fragment, menu);
         notificationItem = menu.findItem(R.id.notification_bell);
-        notificationItem.setIcon(buildCounterDrawable(dbHelper.getPendingOrderHis().size(), R.drawable.pending_notification_bell_white));
+        notificationItem.setIcon(buildCounterDrawable(dbHelper.getPendingOrder().size(), R.drawable.pending_notification_bell_white));
     }
 
     private Drawable buildCounterDrawable(int count, int backgroundImageId) {
@@ -232,6 +232,7 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
                     TYPE = 1;
                     MIME_TYPE = "image/jpeg";
 //                    Global.saveImage(getActivity(), fileUri, fileUri);
+                    Log.e("Image Uri", fileUri.toString());
                     filePath = SiliCompressor.with(getActivity())
                             .compress(FilePath.getPath(getActivity(), fileUri),
                                     new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND), true);
@@ -352,7 +353,7 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
         EventBus.getDefault().unregister(this);
         if (notificationItem != null)
             notificationItem.setIcon(
-                    buildCounterDrawable(dbHelper.getPendingOrderHis().size(),
+                    buildCounterDrawable(dbHelper.getPendingOrder().size(),
                             R.drawable.pending_notification_bell_white));
     }
 

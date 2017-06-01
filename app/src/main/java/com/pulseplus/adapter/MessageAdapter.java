@@ -51,16 +51,16 @@ public class MessageAdapter extends BaseExpandableListAdapter {
     private static final String AUDIO = "2";
     MediaPlayer player = new MediaPlayer();
     MediaPlayerListener listener;
+    boolean playing = true;
+    ProgressDialog mProgressDialog;
+    ChildHolder holder;
     private LayoutInflater inflater;
     private ProgressDialog p;
-   // ProgressBar progressBar, imageLoading;
+    // ProgressBar progressBar, imageLoading;
     private Activity context;
     private ArrayList<Group> groupList;
     private File imageFile;
     private String imageUrl, audioUrl;
-    boolean playing = true;
-    ProgressDialog mProgressDialog;
-    ChildHolder holder;
 
 
     //JcPlayerView jcplayer;
@@ -162,8 +162,8 @@ public class MessageAdapter extends BaseExpandableListAdapter {
             holder.playLayoutLeft = (LinearLayout) convertView.findViewById(R.id.playLayoutLeft);
             p = Global.initProgress(context);
 
-          // progressBar = (ProgressBar) convertView.findViewById(R.id.imageProgress);
-           // imageLoading = (ProgressBar)convertView.findViewById(R.id.imageLoading);
+            // progressBar = (ProgressBar) convertView.findViewById(R.id.imageProgress);
+            // imageLoading = (ProgressBar)convertView.findViewById(R.id.imageLoading);
 
 
             holder.imgView = (ImageView) convertView.findViewById(R.id.imgView);
@@ -200,16 +200,16 @@ public class MessageAdapter extends BaseExpandableListAdapter {
             holder.txtTime.setText(msgDate);
             holder.playLayoutLeft.setVisibility(View.GONE);
             holder.imageViewMeLeft.setVisibility(View.GONE);
-           // progressBar.setVisibility(View.GONE);
-           // progressBar.setVisibility(View.GONE);
+            // progressBar.setVisibility(View.GONE);
+            // progressBar.setVisibility(View.GONE);
 
         } else if (type.equalsIgnoreCase(IMAGE)) {
             holder.txtDesc.setVisibility(View.GONE);
             holder.imageViewMeLeft.setVisibility(View.VISIBLE);
             holder.playLayoutLeft.setVisibility(View.GONE);
             holder.txtTime.setText(msgDate);
-          //  progressBar.setVisibility(View.VISIBLE);
-          //  imageLoading.setVisibility(View.VISIBLE);
+            //  progressBar.setVisibility(View.VISIBLE);
+            //  imageLoading.setVisibility(View.VISIBLE);
 
             final Uri uri = Uri.parse(child.getMessage());
             imageFile = new File(Environment.getExternalStorageDirectory() + Global.IMAGE_RECEIVE + File.separator + uri.getLastPathSegment());
@@ -237,7 +237,7 @@ public class MessageAdapter extends BaseExpandableListAdapter {
             holder.playLayoutLeft.setVisibility(View.VISIBLE);
             holder.imageViewMeLeft.setVisibility(View.GONE);
             holder.txtTime.setText(msgDate);
-          //  progressBar.setVisibility(View.GONE);
+            //  progressBar.setVisibility(View.GONE);
 
             holder.playLayoutLeft.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -306,20 +306,20 @@ public class MessageAdapter extends BaseExpandableListAdapter {
                 holder.playLayout.setVisibility(View.GONE);
                 holder.txtDescMe.setText(child.getMessage());
                 holder.txtTimeMe.setText(msgDate);
-              //  progressBar.setVisibility(View.GONE);
+                //  progressBar.setVisibility(View.GONE);
                 break;
             case IMAGE:
                 holder.imageViewMe.setVisibility(View.VISIBLE);
-               // holder.imageViewMe.setVisibility(View.VISIBLE);
+                // holder.imageViewMe.setVisibility(View.VISIBLE);
                 holder.playLayout.setVisibility(View.GONE);
                 holder.txtDescMe.setVisibility(View.GONE);
                 holder.txtTimeMe.setText(msgDate);
-              //  progressBar.setVisibility(View.VISIBLE);
+                //  progressBar.setVisibility(View.VISIBLE);
 
 
                 final Uri uri = Uri.parse(child.getMessage());
                 imageFile = new File(Environment.getExternalStorageDirectory() + Global.IMAGE_SEND + File.separator + uri.getLastPathSegment());
-             //   progressBar.setProgress(0);
+                //   progressBar.setProgress(0);
                 if (imageFile.exists()) {
                     Picasso.with(context).load(imageFile).tag("thumbnail").fit().centerInside().into(holder.imageViewMe);
                 } else {
@@ -345,7 +345,7 @@ public class MessageAdapter extends BaseExpandableListAdapter {
                 holder.playLayout.setVisibility(View.VISIBLE);
                 holder.txtDescMe.setVisibility(View.GONE);
                 holder.txtTimeMe.setText(msgDate);
-              //  progressBar.setVisibility(View.GONE);
+                //  progressBar.setVisibility(View.GONE);
 
 
                 holder.playLayout.setOnClickListener(new View.OnClickListener() {
@@ -493,12 +493,12 @@ public class MessageAdapter extends BaseExpandableListAdapter {
     private class DownloadTask extends AsyncTask<String, Integer, String> {
 
 
-        private PowerManager.WakeLock mWakeLock;
         File storageDir;
         long millis = System.currentTimeMillis() % 1000;
         OutputStream output = null;
         String FilePath;
         String filename;
+        private PowerManager.WakeLock mWakeLock;
 
         public DownloadTask(String filename) {
             this.filename = filename;

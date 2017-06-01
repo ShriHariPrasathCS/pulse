@@ -395,9 +395,9 @@
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 1180,
+                        "startOffset": 1184,
                         "endColumn": 39,
-                        "endOffset": 1215
+                        "endOffset": 1219
                     }
                 }
             },
@@ -413,10 +413,10 @@
                     "file": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 24,
-                        "startColumn": 0,
-                        "startOffset": 1041,
-                        "endColumn": 36,
-                        "endOffset": 1077
+                        "startColumn": 4,
+                        "startOffset": 1045,
+                        "endColumn": 40,
+                        "endOffset": 1081
                     }
                 }
             },
@@ -984,9 +984,9 @@
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 1409,
+                        "startOffset": 1413,
                         "endColumn": 39,
-                        "endOffset": 1444
+                        "endOffset": 1448
                     }
                 }
             },
@@ -1022,9 +1022,9 @@
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 1269,
+                        "startOffset": 1273,
                         "endColumn": 45,
-                        "endOffset": 1310
+                        "endOffset": 1314
                     }
                 }
             },
@@ -1041,9 +1041,9 @@
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 1316,
+                        "startOffset": 1320,
                         "endColumn": 45,
-                        "endOffset": 1357
+                        "endOffset": 1361
                     }
                 }
             },
@@ -1060,9 +1060,9 @@
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 1132,
+                        "startOffset": 1136,
                         "endColumn": 46,
-                        "endOffset": 1174
+                        "endOffset": 1178
                     }
                 }
             },
@@ -1136,9 +1136,9 @@
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 1363,
+                        "startOffset": 1367,
                         "endColumn": 44,
-                        "endOffset": 1403
+                        "endOffset": 1407
                     }
                 }
             },
@@ -1478,9 +1478,9 @@
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 1221,
+                        "startOffset": 1225,
                         "endColumn": 46,
-                        "endOffset": 1263
+                        "endOffset": 1267
                     }
                 }
             },
@@ -2010,9 +2010,9 @@
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 1083,
+                        "startOffset": 1087,
                         "endColumn": 47,
-                        "endOffset": 1126
+                        "endOffset": 1130
                     }
                 }
             },
@@ -6722,9 +6722,9 @@
                     "position": {
                         "startLine": 92,
                         "startColumn": 4,
-                        "startOffset": 4928,
+                        "startOffset": 4923,
                         "endColumn": 43,
-                        "endOffset": 4967
+                        "endOffset": 4962
                     }
                 }
             },
@@ -6779,9 +6779,9 @@
                     "position": {
                         "startLine": 97,
                         "startColumn": 4,
-                        "startOffset": 5199,
+                        "startOffset": 5194,
                         "endColumn": 69,
-                        "endOffset": 5264
+                        "endOffset": 5259
                     }
                 }
             },
@@ -6874,9 +6874,9 @@
                     "position": {
                         "startLine": 98,
                         "startColumn": 4,
-                        "startOffset": 5270,
+                        "startOffset": 5265,
                         "endColumn": 51,
-                        "endOffset": 5317
+                        "endOffset": 5312
                     }
                 }
             },
@@ -7007,9 +7007,9 @@
                     "position": {
                         "startLine": 96,
                         "startColumn": 4,
-                        "startOffset": 5143,
+                        "startOffset": 5138,
                         "endColumn": 54,
-                        "endOffset": 5193
+                        "endOffset": 5188
                     }
                 }
             },
@@ -7311,9 +7311,9 @@
                     "position": {
                         "startLine": 95,
                         "startColumn": 4,
-                        "startOffset": 5087,
+                        "startOffset": 5082,
                         "endColumn": 54,
-                        "endOffset": 5137
+                        "endOffset": 5132
                     }
                 }
             },
@@ -7596,9 +7596,9 @@
                     "position": {
                         "startLine": 93,
                         "startColumn": 4,
-                        "startOffset": 4973,
+                        "startOffset": 4968,
                         "endColumn": 57,
-                        "endOffset": 5026
+                        "endOffset": 5021
                     }
                 }
             },
@@ -7729,9 +7729,9 @@
                     "position": {
                         "startLine": 99,
                         "startColumn": 4,
-                        "startOffset": 5323,
+                        "startOffset": 5318,
                         "endColumn": 49,
-                        "endOffset": 5368
+                        "endOffset": 5363
                     }
                 }
             },
@@ -7748,9 +7748,9 @@
                     "position": {
                         "startLine": 94,
                         "startColumn": 4,
-                        "startOffset": 5032,
+                        "startOffset": 5027,
                         "endColumn": 53,
-                        "endOffset": 5081
+                        "endOffset": 5076
                     }
                 }
             },
@@ -7899,10 +7899,10 @@
                     "file": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 91,
-                        "startColumn": 8,
-                        "startOffset": 4874,
-                        "endColumn": 56,
-                        "endOffset": 4922
+                        "startColumn": 4,
+                        "startOffset": 4870,
+                        "endColumn": 51,
+                        "endOffset": 4917
                     }
                 }
             },

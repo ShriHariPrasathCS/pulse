@@ -15,6 +15,14 @@ public class OrderHistoryChat {
     @Expose
     public ArrayList<Chat_history> Chat_history;
 
+    public String getResult() {
+        return Result;
+    }
+
+    public ArrayList<Chat_history> getChat_history() {
+        return Chat_history;
+    }
+
     public class Chat_history {
 
         @Expose
@@ -107,13 +115,5 @@ public class OrderHistoryChat {
         public String getUpdated_date() {
             return updated_date;
         }
-    }
-
-    public String getResult() {
-        return Result;
-    }
-
-    public ArrayList<Chat_history> getChat_history() {
-        return Chat_history;
     }
 }

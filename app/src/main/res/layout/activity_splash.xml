@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <ImageView
@@ -15,28 +15,28 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginRight="@dimen/sixteen_dp"
         android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
         android:gravity="center"
         android:orientation="vertical">
 
         <com.armor.fontlib.CTextView
+            android:id="@+id/CTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            app:fontName="@string/MyriadPro_Regular"
             android:layout_gravity="center"
-            android:textColor="@color/white"
+            android:gravity="center"
             android:text="@string/splash_screen"
+            android:textColor="@color/white"
             android:textSize="@dimen/thirty_sp"
-            android:id="@+id/CTextView"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            app:fontName="@string/MyriadPro_Regular" />
 
         <ImageView
             android:layout_width="280dp"
             android:layout_height="180dp"
             android:src="@drawable/splash_logo"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
     </LinearLayout>
 
@@ -44,10 +44,10 @@
         android:id="@+id/avi"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="160dp"
-        android:layout_marginBottom="50dp"
         android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="160dp"
         app:indicatorColor="@color/green"
         app:indicatorName="BallBeatIndicator" />
 </RelativeLayout>

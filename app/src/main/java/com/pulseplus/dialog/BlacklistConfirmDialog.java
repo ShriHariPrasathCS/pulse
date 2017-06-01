@@ -14,11 +14,9 @@ import com.pulseplus.R;
  * Bright Bridge on 14-Nov-16.
  */
 
-public class BlacklistConfirmDialog extends DialogFragment{
+public class BlacklistConfirmDialog extends DialogFragment {
     CTextView txtOk;
     BlacklistConfirmDialog.Blacklist callback;
-
-
 
 
     @Override
@@ -49,6 +47,7 @@ public class BlacklistConfirmDialog extends DialogFragment{
     private void init(View view) {
         txtOk = (CTextView) view.findViewById(R.id.txtOk);
     }
+
     public void setCallback(BlacklistConfirmDialog.Blacklist callback) {
         this.callback = callback;
     }

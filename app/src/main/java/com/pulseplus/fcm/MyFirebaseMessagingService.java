@@ -23,6 +23,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         createNotification(remoteMessage.getNotification().getBody());
     }
+
     // Creates notification based on title and body received
     private void createNotification(String message) {
         Intent resultIntent = null;
@@ -43,7 +44,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         } else {
             resultIntent = new Intent(this, MatchQuizActivity.class);
         }*/
-        if(!TextUtils.isEmpty(PrefConnect.readString(this,PrefConnect.USER_ID,""))){
+        if (!TextUtils.isEmpty(PrefConnect.readString(this, PrefConnect.USER_ID, ""))) {
             resultIntent = new Intent(this, MainActivity.class);
             resultIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
 // Because clicking the notification opens a new ("special") activity, there's

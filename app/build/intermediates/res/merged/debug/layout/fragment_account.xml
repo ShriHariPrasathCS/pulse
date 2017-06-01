@@ -29,11 +29,11 @@
                 android:layout_height="40dp"
                 android:layout_marginBottom="@dimen/ten_dp"
                 android:background="@drawable/white_shape"
+                android:imeOptions="actionNext"
                 android:inputType="textPersonName"
                 android:paddingLeft="@dimen/five_dp"
                 android:textColor="@color/grey"
-                android:textCursorDrawable="@null"
-                android:imeOptions="actionNext"/>
+                android:textCursorDrawable="@null" />
 
             <com.armor.fontlib.CTextView
                 android:layout_width="match_parent"
@@ -50,8 +50,8 @@
                 android:layout_marginBottom="@dimen/ten_dp"
                 android:background="@drawable/white_shape"
                 android:enabled="false"
-                android:imeOptions="actionNext"
                 android:focusable="false"
+                android:imeOptions="actionNext"
                 android:inputType="number"
                 android:paddingLeft="@dimen/five_dp"
                 android:textColor="@color/grey"
@@ -71,8 +71,8 @@
                 android:layout_height="40dp"
                 android:layout_marginBottom="@dimen/ten_dp"
                 android:background="@drawable/white_shape"
-                android:paddingLeft="@dimen/five_dp"
                 android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/five_dp"
                 android:textColor="@color/grey"
                 android:textCursorDrawable="@null" />
 

@@ -43,7 +43,7 @@ public class ConfirmationDialog extends DialogFragment {
         txtCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (saveCallback != null){
+                if (saveCallback != null) {
                     saveCallback.onSave();
                 }
 
@@ -60,7 +60,7 @@ public class ConfirmationDialog extends DialogFragment {
         this.callback = callback;
     }
 
-    public void setSaveCallback(SaveCallback saveCallback){
+    public void setSaveCallback(SaveCallback saveCallback) {
         this.saveCallback = saveCallback;
     }
 

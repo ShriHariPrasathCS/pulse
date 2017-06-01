@@ -7,8 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/white"
+        android:orientation="horizontal"
         android:weightSum="5">
 
         <LinearLayout
@@ -17,10 +17,10 @@
             android:layout_gravity="left"
             android:layout_marginLeft="@dimen/five_dp"
             android:layout_marginTop="@dimen/five_dp"
-            android:paddingTop="20dp"
-            android:paddingLeft="10dp"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_weight="1">
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,11 +52,11 @@
                 android:id="@+id/txtListContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:textColor="@color/dark_grey"
                 android:layout_marginRight="@dimen/fourty_dp"
                 android:ellipsize="end"
-                android:maxLines="1"/>
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:textColor="@color/dark_grey" />
 
         </LinearLayout>
 
@@ -65,12 +65,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="4">
 
-        <ImageView
-            android:id="@+id/continue_order"
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:padding="@dimen/five_dp"
-            android:src="@drawable/pending_order_continue" />
+            <ImageView
+                android:id="@+id/continue_order"
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:padding="@dimen/five_dp"
+                android:src="@drawable/pending_order_continue" />
 
         </LinearLayout>
 

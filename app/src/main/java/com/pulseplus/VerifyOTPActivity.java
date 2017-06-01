@@ -32,7 +32,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
     //CEditText edt1, edt2, edt3, edt4, edt5, edt6;
     CEditText edittext;
     APIService apiservice;
-
+    boolean doubleBackToExitPressedOnce = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -118,7 +118,6 @@ public class VerifyOTPActivity extends AppCompatActivity {
         });
     }
 
-
     private void init() {
         resend = (CButton) findViewById(R.id.btn_resend);
         verify = (CButton) findViewById(R.id.btn_verify);
@@ -134,7 +133,6 @@ public class VerifyOTPActivity extends AppCompatActivity {
 
 
     }
-    boolean doubleBackToExitPressedOnce = false;
 
     @Override
     public void onBackPressed() {

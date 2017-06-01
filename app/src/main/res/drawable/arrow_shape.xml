@@ -10,5 +10,5 @@
         </shape>
     </item>
 
-    <item android:drawable="@drawable/forward"/>
+    <item android:drawable="@drawable/forward" />
 </layer-list>

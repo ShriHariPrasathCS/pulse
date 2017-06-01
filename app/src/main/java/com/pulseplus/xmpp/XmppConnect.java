@@ -195,7 +195,7 @@ public class XmppConnect {
                                 intent.setPackage(context.getPackageName());
                                 context.sendBroadcast(intent);
                             } else if (!message.getBody().equals("Order has been saved to cart") &&
-                                    ((!message.getBody().equals("Your order has been confirmed,it will be delivered by 6-10AM")) || (!message.getBody().equals("Your order has been confirmed,it will be delivered by 6-10PM")) ))  {
+                                    ((!message.getBody().equals("Your order has been confirmed,it will be delivered by 6-10AM")) || (!message.getBody().equals("Your order has been confirmed,it will be delivered by 6-10PM")))) {
                                 Global.BROADCAST = true;
                                 Intent intent = new Intent(XmppService.NEW_MESSAGE);
                                 intent.setPackage(context.getPackageName());
@@ -340,5 +340,4 @@ public class XmppConnect {
                 });
         }
     }
-
 }

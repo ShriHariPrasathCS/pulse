@@ -46,6 +46,7 @@ public class BanConfirmDialog extends DialogFragment {
         txtOk = (CTextView) view.findViewById(R.id.txtOk);
 
     }
+
     public void setCallback(BanCallback callback) {
         this.callback = callback;
     }

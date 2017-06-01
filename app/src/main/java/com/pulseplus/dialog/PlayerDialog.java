@@ -25,6 +25,7 @@ import java.io.FileInputStream;
 
 public class PlayerDialog extends DialogFragment {
 
+    final Handler seekHandler = new Handler();
     AppCompatImageView btn_play;
     AppCompatImageView btn_pause;
     SeekBar seek_bar;
@@ -46,8 +47,6 @@ public class PlayerDialog extends DialogFragment {
 
         }
     };
-    final Handler seekHandler = new Handler();
-
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

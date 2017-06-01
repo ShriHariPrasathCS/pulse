@@ -120,7 +120,7 @@ public class MyAccountFragment extends Fragment {
         if (edtName.getText().length() == 0) {
             Global.CustomToast(getActivity(), "Enter Name");
             error = true;
-        } else if (!email.equals("") && !email.matches( "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")) {
+        } else if (!email.equals("") && !email.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")) {
             Global.CustomToast(getActivity(), "Enter Valid EmailId");
 
          /*   Context context = getActivity();
@@ -253,7 +253,7 @@ public class MyAccountFragment extends Fragment {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onInternetConnectionCheck(Internet internet) {
         if (internet.isConnected) {
-           // Global.CustomToast(getActivity(), "Internet Avaliable");
+            // Global.CustomToast(getActivity(), "Internet Avaliable");
         } else {
             Global.CustomToast(getActivity(), "Check your internet connection");
             //Global.Toast(MainActivity.this, "Check your internet connection");

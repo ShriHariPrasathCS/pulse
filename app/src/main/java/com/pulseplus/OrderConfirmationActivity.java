@@ -152,7 +152,7 @@ public class OrderConfirmationActivity extends AppCompatActivity implements Cart
     @Override
     public void onMorningClicked() {
         Intent intent = new Intent();
-    //    intent.putExtra("message", "Your order has been confirmed,it will be delivered by 6-10AM");
+        //    intent.putExtra("message", "Your order has been confirmed,it will be delivered by 6-10AM");
         setResult(RESULT_OK, intent);
         finish();
     }
@@ -160,7 +160,7 @@ public class OrderConfirmationActivity extends AppCompatActivity implements Cart
     @Override
     public void onEveningClicked() {
         Intent intent = new Intent();
-    //    intent.putExtra("message", "Your order has been confirmed,it will be delivered by 6-10PM");
+        //    intent.putExtra("message", "Your order has been confirmed,it will be delivered by 6-10PM");
         setResult(RESULT_OK, intent);
         finish();
     }

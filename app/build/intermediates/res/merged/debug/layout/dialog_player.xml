@@ -31,7 +31,7 @@
             android:layout_width="@dimen/touch_default"
             android:layout_height="@dimen/touch_default"
             android:layout_gravity="center"
-            android:visibility="gone"
-            android:background="@drawable/pause_green" />
+            android:background="@drawable/pause_green"
+            android:visibility="gone" />
     </FrameLayout>
 </LinearLayout>

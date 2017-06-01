@@ -191,7 +191,6 @@ public class AudioRecordActivity extends AppCompatActivity {
                     refresh_image_grey.setEnabled(false);
 
 
-
                     startTime = SystemClock.uptimeMillis();
                     txtTimer.setText("00:00");
                     handler.postDelayed(runnable, 100);
@@ -435,10 +434,8 @@ public class AudioRecordActivity extends AppCompatActivity {
                 imgPauseMe.setClickable(false);
                 imgPauseMe.setEnabled(false);
                 duration = true;
-
             }
         });
-
 
         seekBar.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
             @Override

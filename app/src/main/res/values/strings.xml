@@ -89,7 +89,7 @@
     <string name="send">SEND</string>
 
 
-        <string name="text_test" >fadsfasdfadsf</string>
+    <string name="text_test">fadsfasdfadsf</string>
     <string name="cart_title">Cart</string>
     <string name="pending_orders">Pending Orders</string>
     <string name="save_to_cart">Save To Cart</string>

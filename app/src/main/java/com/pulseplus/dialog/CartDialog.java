@@ -55,10 +55,9 @@ public class CartDialog extends DialogFragment {
     }
 
     private void init(View view) {
-        button_confirm = (Button)view.findViewById(R.id.button_confirm);
+        button_confirm = (Button) view.findViewById(R.id.button_confirm);
         tv_order_total = (TextView) view.findViewById(R.id.tv_order_total);
         popup_listview = (ListView) view.findViewById(R.id.cart_listview);
-
 
 
     }

@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.pulseplus.adapter.PendingOrdersListviewAdapter;
+import com.pulseplus.adapter.OrderHistoryListViewAdapter;
 import com.pulseplus.database.DBHelper;
-import com.pulseplus.model.PendingOrder;
+import com.pulseplus.model.OrderHistory;
 
 /**
  * Bright Bridge on 07-Apr-17.
@@ -22,7 +22,7 @@ public class PendingOrdersActivity extends AppCompatActivity {
     public Toolbar toolbar;
     int list_count;
     private ListView listView;
-    private PendingOrdersListviewAdapter adapter;
+    private OrderHistoryListViewAdapter adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,7 +57,9 @@ public class PendingOrdersActivity extends AppCompatActivity {
     private void showList() {
 
         DBHelper dbHelper = DBHelper.getInstance(PendingOrdersActivity.this);
-        adapter = new PendingOrdersListviewAdapter(PendingOrdersActivity.this, dbHelper.getPendingOrderHis());
+//        adapter = new PendingOrdersListviewAdapter(PendingOrdersActivity.this, dbHelper.getPendingOrder());
+        adapter = new OrderHistoryListViewAdapter(this, dbHelper.getPendingOrder());
+        listView.setAdapter(adapter);
         list_count = listView.getCount();
         listView.setAdapter(adapter);
 
@@ -80,15 +82,11 @@ public class PendingOrdersActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                PendingOrder.Pending_orders chat = (PendingOrder.Pending_orders) listView.getItemAtPosition(position);
+                OrderHistory.Order_history chat = adapter.getItem(position);
                 String order_id = chat.getOrderid();
                 Intent intent = new Intent(PendingOrdersActivity.this, PendingOrderChat.class);
                 intent.putExtra("orderId", order_id);
-//                Intent intentAdapter = new Intent(PendingOrdersActivity.this, PendingOrdersListviewAdapter.class);
-//                intentAdapter.putExtra("orderId", order_id);
                 startActivity(intent);
-//                startActivity(intentAdapter);
-
             }
         });
     }

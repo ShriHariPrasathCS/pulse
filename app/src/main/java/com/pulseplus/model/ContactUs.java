@@ -13,6 +13,11 @@ public class ContactUs {
     @Expose
     public String message;
 
+    public ContactUs(String email, String message) {
+        this.email = email;
+        this.message = message;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -21,12 +26,7 @@ public class ContactUs {
         return message;
     }
 
-    public ContactUs(String email, String message){
-        this.email = email;
-        this.message = message;
-    }
-
-    public class Result{
+    public class Result {
 
         @Expose
         public String Result;

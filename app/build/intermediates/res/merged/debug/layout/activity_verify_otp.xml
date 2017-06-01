@@ -10,12 +10,12 @@
     <com.armor.fontlib.CTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_the_6_digit_confirmation_code"
         android:layout_marginEnd="@dimen/ten_dp"
         android:layout_marginLeft="@dimen/ten_dp"
         android:layout_marginRight="@dimen/ten_dp"
         android:layout_marginStart="@dimen/ten_dp"
         android:layout_marginTop="@dimen/twenty_dp"
+        android:text="@string/enter_the_6_digit_confirmation_code"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/eighteen_sp"
         android:textStyle="bold"
@@ -24,15 +24,16 @@
     <com.armor.fontlib.CTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="It was sent in an SMS message to"
         android:layout_marginEnd="@dimen/ten_dp"
         android:layout_marginLeft="@dimen/ten_dp"
         android:layout_marginRight="@dimen/ten_dp"
         android:layout_marginStart="@dimen/ten_dp"
         android:layout_marginTop="7dp"
+        android:text="It was sent in an SMS message to"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/eighteen_sp"
         app:fontName="@string/CoreSansA45Regular" />
+
     <com.armor.fontlib.CTextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
@@ -46,22 +47,21 @@
         android:textSize="@dimen/eighteen_sp"
         app:fontName="@string/CoreSansA45Regular" />
 
-        <com.armor.fontlib.CEditText
-            android:id="@+id/otp"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:maxLength="6"
-            android:inputType="number"
-            android:paddingLeft="@dimen/ten_dp"
-            android:paddingRight="@dimen/ten_dp"
-            android:background="@drawable/grey_shape"
-            android:textColorHint="@color/grey1"
-            android:textColor="@color/black"
-            android:textCursorDrawable="@null"
-            app:fontName="@string/CoreSansA45Regular"
-            android:hint="@string/otp"
-             />
+    <com.armor.fontlib.CEditText
+        android:id="@+id/otp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/grey_shape"
+        android:hint="@string/otp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey1"
+        android:textCursorDrawable="@null"
+        app:fontName="@string/CoreSansA45Regular" />
 
 
     <LinearLayout

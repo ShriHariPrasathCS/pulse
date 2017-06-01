@@ -73,7 +73,7 @@ public class OrderHistoryChatActivity extends AppCompatActivity {
         reorder = (CButton) findViewById(R.id.btn_Reorder);
         neworder = (CButton) findViewById(R.id.btn_Neworder);
         p = Global.initProgress(OrderHistoryChatActivity.this);
-        cart_imageView = (ImageView)findViewById(R.id.cart_imageView);
+        cart_imageView = (ImageView) findViewById(R.id.cart_imageView);
         cart_imageView.setVisibility(View.VISIBLE);
     }
 
@@ -99,6 +99,7 @@ public class OrderHistoryChatActivity extends AppCompatActivity {
                     }
                 }
             }
+
             @Override
             public void onFailure(Call<OrderHistoryChat> call, Throwable t) {
                 Global.dismissProgress(p);
@@ -146,7 +147,6 @@ public class OrderHistoryChatActivity extends AppCompatActivity {
         });
 
     }
-
 
 
     private void setListner() {

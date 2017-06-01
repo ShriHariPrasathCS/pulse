@@ -24,14 +24,15 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class SplashActivity extends AppCompatActivity {
-    private ProgressDialog p;
     AVLoadingIndicatorView avi;
+    private ProgressDialog p;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         p = Global.initProgress(SplashActivity.this);
-        avi = (AVLoadingIndicatorView)findViewById(R.id.avi);
+        avi = (AVLoadingIndicatorView) findViewById(R.id.avi);
         // MyFirebaseInstanceIDService id = new MyFirebaseInstanceIDService();
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -114,18 +115,19 @@ public class SplashActivity extends AppCompatActivity {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onInternetConnectionCheck(Internet internet) {
         if (internet.isConnected) {
-         //   Global.CustomToast(SplashActivity.this, "Internet Avaliable");
+            //   Global.CustomToast(SplashActivity.this, "Internet Avaliable");
         } else {
             Global.CustomToast(SplashActivity.this, "Check your internet connection");
             //Global.Toast(MainActivity.this, "Check your internet connection");
         }
     }
-    void startAnim(){
+
+    void startAnim() {
         avi.show();
         // or avi.smoothToShow();
     }
 
-    void stopAnim(){
+    void stopAnim() {
         avi.hide();
         // or avi.smoothToHide();
     }

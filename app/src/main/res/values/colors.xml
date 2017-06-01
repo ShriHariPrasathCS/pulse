@@ -22,7 +22,7 @@
     <color name="lightGreen">#55c0b1</color>
     <color name="light_grey">#f4f0ed</color>
     <color name="dark_grey">#858480</color>
-<color name="blue">#FF1A87C6</color>
+    <color name="blue">#FF1A87C6</color>
     <color name="white_trans">#b1ffffff</color>
     <color name="grey_trans">#7c000000</color>
     <color name="black">#000000</color>

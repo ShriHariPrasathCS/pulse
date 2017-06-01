@@ -41,12 +41,11 @@ public class CartListViewAdapter extends ArrayAdapter {
     int quantity_decrease = 0;
     String ttt;
     int total_product_price;
+    String orderid, name, qty, total;
     private LayoutInflater inflater;
     private Context context;
     private String mGlobalVarValue;
     private APIService apiService;
-    String orderid, name, qty, total;
-
     private CartListener cartListener;
 
     public CartListViewAdapter(Context context, ArrayList<Cart.CartList> cartLists, CartListener cartListener) {
@@ -85,7 +84,6 @@ public class CartListViewAdapter extends ArrayAdapter {
         holder.tv_medicine_name.setText(medicine_name);
         holder.tv_quantity.setText(String.valueOf(quantity[0]));
         holder.tv_product_price.setText("Rs." + product_price);
-
 
 
         total_product_price = quantity[0] * product_price;
@@ -163,7 +161,7 @@ public class CartListViewAdapter extends ArrayAdapter {
 
                 String orderid = PrefConnect.readString(getContext(), PrefConnect.ORDER_ID, "");
                 String name = cartLists.get(position).getName();
-                CartMedicineDelete.Request request = new CartMedicineDelete.Request(orderid,name);
+                CartMedicineDelete.Request request = new CartMedicineDelete.Request(orderid, name);
                 Call<CartMedicineDelete.Response> call = apiService.cartMedicineDelete(request);
                 call.enqueue(new Callback<CartMedicineDelete.Response>() {
                     @Override
@@ -175,12 +173,12 @@ public class CartListViewAdapter extends ArrayAdapter {
                                 cartLists.remove(position);
                                 if (cartListener != null) {
                                     cartListener.onCardAddOrRemove(getCartTotal());
-                                    Global.CustomToast((Activity) context,"Product Deleted");
+                                    Global.CustomToast((Activity) context, "Product Deleted");
                                 }
                                 notifyDataSetChanged();
-                                Global.CustomToast((Activity) context,"Product Deleted");
+                                Global.CustomToast((Activity) context, "Product Deleted");
                             } else {
-                                Global.CustomToast((Activity) context,"Product Deletion Failed");
+                                Global.CustomToast((Activity) context, "Product Deletion Failed");
                             }
                         }
                     }

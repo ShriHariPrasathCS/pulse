@@ -21,26 +21,25 @@ import com.pulseplus.navigation.DrawerFragment;
 
 public class FaqFragment extends Fragment {
     WebView myWebView;
-   //  private Toolbar toolbar;
-   // ProgressDialog p ;
-
+    //  private Toolbar toolbar;
+    // ProgressDialog p ;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_terms_and_condition, container, false);
-       // p.show();
+        // p.show();
         init(view);
         Setwebview();
-       // setToolBar();
+        // setToolBar();
         return view;
     }
 
     private void init(View view) {
-        myWebView = (WebView)view.findViewById(R.id.terms_condition_webview);
-       // p = Global.initProgress(getActivity());
-       //  toolbar = (Toolbar)view.findViewById(R.id.toolbar);
+        myWebView = (WebView) view.findViewById(R.id.terms_condition_webview);
+        // p = Global.initProgress(getActivity());
+        //  toolbar = (Toolbar)view.findViewById(R.id.toolbar);
     }
 
     private void setToolBar() {
@@ -68,9 +67,8 @@ public class FaqFragment extends Fragment {
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebView.loadUrl(url);
-       // p.show();
+        // p.show();
     }
-
 
 
 }

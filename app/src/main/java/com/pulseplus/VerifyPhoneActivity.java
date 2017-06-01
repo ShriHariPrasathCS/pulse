@@ -109,9 +109,9 @@ public class VerifyPhoneActivity extends AppCompatActivity implements NumberConf
 
     @Override
     public void onAccept() {
-         String deviceToken = PrefConnect.readString(VerifyPhoneActivity.this, PrefConnect.FCMTOKEN, "");
+        String deviceToken = PrefConnect.readString(VerifyPhoneActivity.this, PrefConnect.FCMTOKEN, "");
 
-       // String deviceToken = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
+        // String deviceToken = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
         PrefConnect.writeString(VerifyPhoneActivity.this, PrefConnect.DEVICE_TOKEN, deviceToken);
         final Register register = new Register(number, "2", deviceToken, null);
         Call<Register.Result> call = apiService.registerUser(register);
@@ -131,7 +131,6 @@ public class VerifyPhoneActivity extends AppCompatActivity implements NumberConf
                         PrefConnect.writeString(VerifyPhoneActivity.this, PrefConnect.MOBILE, userdetails.get(0).getMobile());
                         PrefConnect.writeString(VerifyPhoneActivity.this, PrefConnect.JID, userdetails.get(0).getJid());
                         PrefConnect.writeString(VerifyPhoneActivity.this, PrefConnect.JID_PASS, result.getJpass());
-
 
 
                         if (userdetails.get(0).getCustomer_status().equals("3")) {
