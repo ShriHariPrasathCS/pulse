@@ -1,7 +1,31 @@
 [
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
         "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
@@ -10,6 +34,10 @@
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
         "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
@@ -34,6 +62,18 @@
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",

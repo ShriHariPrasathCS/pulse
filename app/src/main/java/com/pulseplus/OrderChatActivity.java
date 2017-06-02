@@ -616,6 +616,8 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                             if (TYPE == 1) {
                                 toJid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
                                 if (!toJid.equals("")) {
+                                    sendMessage(IMAGE, file.getName(), "");
+                                    getmService().xmpp.sendMessage(file.getName(), toJid, String.valueOf(TYPE), getDate());
                                     Global.CustomToast(OrderChatActivity.this, "Uploaded Successfully");
                                     //           dbHelper.insertOrderHistory(orderId,"1","1", file.getAbsolutePath(), getDate());
                                     progressBar.setVisibility(View.GONE);

@@ -22,5 +22,29 @@
                 }
             }
         ]
+    },
+    {
+        "outputFile": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 254,
+                    "endOffset": 355
+                },
+                "from": {
+                    "file": "C:\\Android\\.android\\build-cache\\baa9fe0a7f11348255d271f542cbddeb73615e3c\\output\\res\\values-pa\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 331,
+                        "endColumn": 254,
+                        "endOffset": 581
+                    }
+                }
+            }
+        ]
     }
 ]
