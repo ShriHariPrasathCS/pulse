@@ -37,6 +37,7 @@ import com.pulseplus.OrderChatActivity;
 import com.pulseplus.PendingOrdersActivity;
 import com.pulseplus.R;
 import com.pulseplus.database.DBHelper;
+import com.pulseplus.dialog.PhotoChooserDialog;
 import com.pulseplus.dialog.PhotoDialog;
 import com.pulseplus.global.Global;
 import com.pulseplus.model.ImageModel;
@@ -185,9 +186,23 @@ public class HomeFragment extends Fragment implements PhotoDialog.ImageListener 
         prescripLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PhotoDialog dialog = new PhotoDialog();
-                dialog.setImageListener(HomeFragment.this);
-                dialog.show(getFragmentManager(), "Image");
+//                PhotoDialog dialog = new PhotoDialog();
+//                dialog.setImageListener(HomeFragment.this);
+//                dialog.show(getFragmentManager(), "Image");
+                PhotoChooserDialog dialog = new PhotoChooserDialog();
+                dialog.setImageCallback(new PhotoChooserDialog.ImageCallback() {
+                    @Override
+                    public void onImageReceived(Uri imageUri) {
+                        TYPE = 1;
+                        MIME_TYPE = "image/jpeg";
+                        Log.e("Image Uri", imageUri.toString());
+                        String filePath = SiliCompressor.with(getActivity())
+                                .compress(FilePath.getPath(getActivity(), imageUri),
+                                        new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND), true);
+                        uploadFile(new String[]{"file"}, filePath, null);
+                    }
+                });
+                dialog.show(getChildFragmentManager(), "PhotoChooserDialog");
             }
         });
 

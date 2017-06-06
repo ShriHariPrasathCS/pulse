@@ -112,6 +112,15 @@
         <activity
             android:name=".WebViewActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".util.camera.TempActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

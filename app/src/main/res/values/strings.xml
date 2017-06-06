@@ -98,4 +98,5 @@
     <string name="choose_delivery_slot">Choose Delivery Slot</string>
     <string name="continue_order">Continue</string>
     <string name="save_order">Save Order</string>
+    <string name="select">Select</string>
 </resources>
