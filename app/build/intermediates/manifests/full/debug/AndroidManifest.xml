@@ -29,6 +29,7 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.pulseplus.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -193,6 +194,11 @@
             android:authorities="com.pulseplus.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
+        <provider
+            android:name="com.amitshekhar.DebugDBInitProvider"
+            android:authorities="com.pulseplus.DebugDBInitProvider"
+            android:enabled="true"
+            android:exported="false" />
     </application>
 
 </manifest>

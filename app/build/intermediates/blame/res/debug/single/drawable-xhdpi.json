@@ -1,19 +1,15 @@
 [
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_aboutus_icon.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_aboutus_icon.png"
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_home_icon.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_home_icon.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bg_image.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\bg_image.png"
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_aboutus_icon.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_aboutus_icon.png"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dashboard_audio.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\dashboard_audio.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dashboard_camera.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\dashboard_camera.png"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_help_icon.png",
@@ -28,62 +24,6 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\bg_image.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\splash_bg.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\splash_bg.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\splash_screen_with_offer.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\splash_screen_with_offer.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\pending_order_continue.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\pending_order_continue.png"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_menu_edit.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\ic_menu_edit.png"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dashboard_camera.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\dashboard_camera.png"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\pending_order_continue.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\pending_order_continue.png"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_help_icon.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_help_icon.png"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_home_icon.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_home_icon.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_order_history_icon.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_order_history_icon.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\splash_with_offer.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\splash_with_offer.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dashboard_audio.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\dashboard_audio.png"
-    },
-    {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_aboutus_icon.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_aboutus_icon.png"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cart_icon_chat.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\cart_icon_chat.png"
     },
@@ -92,31 +32,31 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\splash_bg.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\splash_screen_with_offer.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\splash_screen_with_offer.png"
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\splash_screen_with_offer.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\splash_screen_with_offer.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\cart_icon_chat.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\cart_icon_chat.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_home_icon.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_home_icon.png"
-    },
-    {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_promotion_icon.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_promotion_icon.png"
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_menu_edit.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\ic_menu_edit.png"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_promotion_icon.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_promotion_icon.png"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_menu_edit.png",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\ic_menu_edit.png"
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dashboard_camera.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\dashboard_camera.png"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_order_history_icon.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_order_history_icon.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\pending_order_continue.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\pending_order_continue.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png"
     }
 ]

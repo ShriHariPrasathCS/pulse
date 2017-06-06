@@ -18,6 +18,7 @@ ADDED from F:\Android Studio Projects\pulse\app\src\main\AndroidManifest.xml:5:5
 MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\Android\.android\build-cache\e57ed1e4795d2c746e6d5f9a25317089059a5497\output\AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Android\.android\build-cache\249b8421dde538ebfc14f793dc92710e92566068\output\AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Android\.android\build-cache\f4559b7fc1a4d60f4e1eb64d8357aa53cfb18914\output\AndroidManifest.xml:21:5-67
+MERGED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:29:5-67
 	android:name
 		ADDED from F:\Android Studio Projects\pulse\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -69,6 +70,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] C:\Android\.androi
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Android\.android\build-cache\95e1b467d5dba74bbe709ea0d783a160e0908651\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Android\.android\build-cache\bafbf57ba4cd7352637cda5554c2dbec308a7e9f\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Android\.android\build-cache\727edcc1a2192cd4b096f6d928aac1eb7fdb649e\output\AndroidManifest.xml:29:5-20
+MERGED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:32:5-38:19
 	android:label
 		ADDED from F:\Android Studio Projects\pulse\app\src\main\AndroidManifest.xml:17:9-41
 	android:supportsRtl
@@ -269,6 +271,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] C:\Android\.androi
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Android\.android\build-cache\95e1b467d5dba74bbe709ea0d783a160e0908651\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Android\.android\build-cache\bafbf57ba4cd7352637cda5554c2dbec308a7e9f\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Android\.android\build-cache\727edcc1a2192cd4b096f6d928aac1eb7fdb649e\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:25:5-27:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Android\.android\build-cache\8833adf2eef9c94ae07b94bfa49bae56028b4730\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -388,3 +391,17 @@ ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Android\.android\build
 		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Android\.android\build-cache\b73a62decf44163e4decaf2aa504057f35fec4af\output\AndroidManifest.xml:11:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Android\.android\build-cache\b73a62decf44163e4decaf2aa504057f35fec4af\output\AndroidManifest.xml:9:13-58
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:30:22-73
+provider#com.amitshekhar.DebugDBInitProvider
+ADDED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:33:9-37:40
+	android:authorities
+		ADDED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:35:13-71
+	android:enabled
+		ADDED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from [com.amitshekhar.android:debug-db:1.0.0] C:\Android\.android\build-cache\a49bb884413fca86ebd93cc9dd8e50690f63e8ef\output\AndroidManifest.xml:34:13-63

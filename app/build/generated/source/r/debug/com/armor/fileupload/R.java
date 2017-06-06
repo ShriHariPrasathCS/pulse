@@ -665,11 +665,11 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f060010;
         public static final int abc_shareactionprovider_share_with_application = 0x7f060011;
         public static final int abc_toolbar_collapse_description = 0x7f060012;
-        public static final int app_name = 0x7f06003d;
-        public static final int camera = 0x7f06003f;
-        public static final int cancel = 0x7f060040;
-        public static final int choose = 0x7f060043;
-        public static final int gallery = 0x7f060053;
+        public static final int app_name = 0x7f06003e;
+        public static final int camera = 0x7f060040;
+        public static final int cancel = 0x7f060041;
+        public static final int choose = 0x7f060044;
+        public static final int gallery = 0x7f060054;
         public static final int status_bar_notification_info_overflow = 0x7f060015;
     }
     public static final class style {

@@ -185,7 +185,7 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         ContentValues val = new ContentValues();
         val.put(Order.COL_IS_PENDING, "0");
-        db.update(Order.TABLE, val, Order.COL_ORDERID + "=? and " + Order.COL_IS_PENDING + "=?", new String[]{orderId, "1 "});
+        db.update(Order.TABLE, val, Order.COL_ORDERID + "=? and " + Order.COL_IS_PENDING + "=?", new String[]{orderId, "1"});
         db.close();
     }
 
@@ -198,7 +198,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 //    public void insertPendingOrder(String orderId, String chat_usertype, String message_type, String message, String sent_date) {
-////        if (!TextUtils.isEmpty(message)) {
+//        if (!TextUtils.isEmpty(message)) {
 //        SQLiteDatabase db = this.getWritableDatabase();
 //        ContentValues values = new ContentValues();
 //        values.put(DBPendingOrderChat.COL_ORDERID, orderId);

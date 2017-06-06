@@ -446,6 +446,7 @@
     <string name="JLSDataGothicC_NC">JLSDataGothicC_NC.otf</string>
     <string name="MyriadPro_Regular">MyriadPro-Regular.otf</string>
     <string name="MyriadPro_Semibold">MyriadPro-Semibold.otf</string>
+    <string name="PORT_NUMBER" translatable="false">8080</string>
     <string name="_0">0</string>
     <string name="_1">1</string>
     <string name="_2">2</string>
