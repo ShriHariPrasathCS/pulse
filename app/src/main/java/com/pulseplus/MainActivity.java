@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.Menu;
 
 import com.pulseplus.background.RegStatusService;
+import com.pulseplus.database.DBHelper;
 import com.pulseplus.dialog.BanConfirmDialog;
 import com.pulseplus.dialog.RegisterDialog;
 import com.pulseplus.fragment.AboutUsFragment;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
     private RegStatusService regStatusService;
     private BandXmppReciever recieverBanned;
     private boolean bound = false;
+    private DBHelper dbHelper;
     private ServiceConnection regConnect = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
@@ -109,6 +111,7 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
 
         p = Global.initProgress(this);
         apiService = RetrofitSingleton.createService(APIService.class);
+        dbHelper = DBHelper.getInstance(this);
 
     }
 
@@ -277,6 +280,9 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
 
     @Override
     protected void onDestroy() {
+//        Global.CustomToast(MainActivity.this, "CLOSED");
+//        String orderId = PrefConnect.readString(MainActivity.this, PrefConnect.ORDER_ID, "");
+//        dbHelper.saveToPendingOrder(orderId);
         super.onDestroy();
         doUnbindService();
     }

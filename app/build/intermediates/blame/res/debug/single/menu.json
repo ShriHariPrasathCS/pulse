@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\menu\\ucrop_menu_activity.xml",
+        "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\menu\\ucrop_menu_activity.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_fragment.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\menu\\menu_fragment.xml"
     },

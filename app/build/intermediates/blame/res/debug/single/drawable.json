@@ -4,6 +4,10 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\recvr_border.png"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
@@ -92,6 +96,10 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\button_effect.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ucrop_vector_loader_animated.xml",
+        "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\drawable\\ucrop_vector_loader_animated.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green_out_circle_shape.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\green_out_circle_shape.xml"
     },
@@ -120,6 +128,10 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\forward.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ucrop_vector_ic_crop.xml",
+        "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\drawable\\ucrop_vector_ic_crop.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\walk2.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\walk2.png"
     },
@@ -134,6 +146,10 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promotion_four.jpg",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\promotion_four.jpg"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recvr.png",
@@ -158,6 +174,10 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\refresh.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -400,6 +420,10 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\button_effect_one.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_photo_camera.xml",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\ic_photo_camera.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stop_shape_grey.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\stop_shape_grey.xml"
     },
@@ -410,6 +434,10 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_white3.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\circle_white3.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_photo_library.xml",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\ic_photo_library.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
@@ -472,6 +500,10 @@
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh_grey.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\refresh_grey.xml"
     },
@@ -510,6 +542,10 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_border.xml",
@@ -560,6 +596,10 @@
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ucrop_vector_loader.xml",
+        "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\drawable\\ucrop_vector_loader.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash_logo.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\splash_logo.png"
     },
@@ -594,6 +634,10 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\send_shape.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\send_shape.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ucrop_shadow_upside.xml",
+        "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\drawable\\ucrop_shadow_upside.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_camera.xml",

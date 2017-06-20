@@ -58,5 +58,9 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\navigation_drawer_myaccount_icon.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\information_icon_green.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xhdpi\\information_icon_green.png"
     }
 ]

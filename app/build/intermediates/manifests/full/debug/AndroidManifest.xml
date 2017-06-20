@@ -134,6 +134,14 @@
         <activity
             android:name="com.pulseplus.WebViewActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pulseplus.util.camera.TempActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <!--
          FirebaseMessagingService performs security checks at runtime,
              no need for explicit permissions despite exported="true"

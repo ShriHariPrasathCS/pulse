@@ -8,31 +8,33 @@ package com.google.android.gms;
 
 public final class R {
     public static final class attr {
-        public static final int circleCrop = 0x7f0100d5;
-        public static final int imageAspectRatio = 0x7f0100d4;
-        public static final int imageAspectRatioAdjust = 0x7f0100d3;
+        public static final int circleCrop = 0x7f010100;
+        public static final int imageAspectRatio = 0x7f0100ff;
+        public static final int imageAspectRatioAdjust = 0x7f0100fe;
     }
     public static final class id {
-        public static final int adjust_height = 0x7f0b001e;
-        public static final int adjust_width = 0x7f0b001f;
-        public static final int none = 0x7f0b000f;
-        public static final int normal = 0x7f0b000b;
-        public static final int progressBar = 0x7f0b005d;
-        public static final int radio = 0x7f0b0043;
-        public static final int seek_bar = 0x7f0b00c4;
-        public static final int text = 0x7f0b0090;
-        public static final int text2 = 0x7f0b010a;
-        public static final int toolbar = 0x7f0b0122;
-        public static final int wrap_content = 0x7f0b001a;
+        public static final int adjust_height = 0x7f0d003a;
+        public static final int adjust_width = 0x7f0d003b;
+        public static final int auto = 0x7f0d0025;
+        public static final int center = 0x7f0d0027;
+        public static final int none = 0x7f0d0014;
+        public static final int normal = 0x7f0d0010;
+        public static final int progressBar = 0x7f0d0079;
+        public static final int radio = 0x7f0d005f;
+        public static final int seek_bar = 0x7f0d00ee;
+        public static final int text = 0x7f0d00ac;
+        public static final int text2 = 0x7f0d0134;
+        public static final int toolbar = 0x7f0d014c;
+        public static final int wrap_content = 0x7f0d0024;
     }
     public static final class integer {
-        public static final int google_play_services_version = 0x7f0c0004;
+        public static final int google_play_services_version = 0x7f0b0007;
     }
     public static final class string {
-        public static final int common_google_play_services_unknown_issue = 0x7f060013;
+        public static final int common_google_play_services_unknown_issue = 0x7f070013;
     }
     public static final class styleable {
-        public static final int[] LoadingImageView = { 0x7f0100d3, 0x7f0100d4, 0x7f0100d5 };
+        public static final int[] LoadingImageView = { 0x7f0100fe, 0x7f0100ff, 0x7f010100 };
         public static final int LoadingImageView_circleCrop = 2;
         public static final int LoadingImageView_imageAspectRatio = 1;
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;

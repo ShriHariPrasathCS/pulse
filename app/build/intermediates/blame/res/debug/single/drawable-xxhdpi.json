@@ -16,6 +16,10 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\cart_icon_chat.png"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\information_icon_green.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\information_icon_green.png"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\pending_order_continue.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\pending_order_continue.png"
     },

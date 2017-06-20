@@ -29,8 +29,7 @@
             android:layout_margin="@dimen/fifteen_dp"
             android:background="@drawable/dashboard_camera"
             android:fadingEdgeLength="@dimen/twenty_dp"
-            android:gravity="center" />
-
+            android:gravity="center"/>
 
         <RelativeLayout
             android:id="@+id/audio_layout"

@@ -45,6 +45,7 @@ import com.pulseplus.dialog.BanConfirmDialog;
 import com.pulseplus.dialog.BlacklistConfirmDialog;
 import com.pulseplus.dialog.CartDialog;
 import com.pulseplus.dialog.ConfirmationDialog;
+import com.pulseplus.dialog.PhotoChooserDialog;
 import com.pulseplus.dialog.PhotoDialog;
 import com.pulseplus.dialog.WhitelistConfirmDialog;
 import com.pulseplus.global.Global;
@@ -178,9 +179,29 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
             @Override
             public void onClick(View v) {
                 closePlayer();
-                PhotoDialog dialog = new PhotoDialog();
-                dialog.setImageListener(OrderChatActivity.this);
-                dialog.show(getSupportFragmentManager(), "Image");
+                PhotoChooserDialog dialog = new PhotoChooserDialog();
+                dialog.setImageCallback(new PhotoChooserDialog.ImageCallback() {
+                    @Override
+                    public void onImageReceived(Uri imageUri) {
+                        TYPE = 1;
+                        String filePath = SiliCompressor.with(OrderChatActivity.this)
+                                .compress(imageUri.toString(),
+                                        new File(Environment.getExternalStorageDirectory().getAbsolutePath() + Global.IMAGE_SEND), true);
+                        uploadFile(new String[]{"file"}, filePath, null);
+                        File myFile = new File(imageUri.getPath());
+                        if (myFile.exists()) {
+                            toJid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
+                            sendMessage(IMAGE, myFile.getName(), "");
+                            getmService().xmpp.sendMessage(myFile.getName(), toJid, String.valueOf(TYPE), getDate());
+                            //              dbHelper.insertOrderHistory(orderId, "1", "1", myFile.getAbsolutePath(), getDate());
+
+                            adapter.notifyDataSetChanged();
+                        }
+                        PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, childList.size());
+
+                    }
+                });
+                dialog.show(getSupportFragmentManager(), "PhotoChooserDialog");
             }
         });
 
@@ -706,6 +727,8 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
     @Override
     public void onStop() {
         super.onStop();
+        onCancel();
+        dbHelper.saveToPendingOrder(orderId);
         EventBus.getDefault().unregister(this);
         isInFront = false;
         PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, 0);
@@ -817,6 +840,87 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         dialog.show(getSupportFragmentManager(), "confirmation");
     }
 
+    public void onSave(){
+
+        Call<SaveToCart> call = apiService.saveToCart(orderId);
+        call.enqueue(new Callback<SaveToCart>() {
+            @Override
+            public void onResponse(Call<SaveToCart> call, Response<SaveToCart> response) {
+                if (response.isSuccessful()) {
+                    Global.dismissProgress(p);
+                    final SaveToCart saveToCart = response.body();
+                    if (saveToCart.getResult().equalsIgnoreCase("Success")) {
+                        Global.CustomToast(OrderChatActivity.this, saveToCart.getStatus());
+                        String jid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
+
+                        getmService().xmpp.sendMessage("Order has been saved to cart", jid, "3", getDate());
+                        PrefConnect.writeString(OrderChatActivity.this, PrefConnect.TO_JID, "");
+                        dbHelper.saveToPendingOrder(orderId);
+                        //  PrefConnect.writeString(OrderChatActivity.this, PrefConnect.ORDER_ID, "");
+
+//                                handler.postDelayed(new Runnable() {
+//                                    @Override
+//                                    public void run() {
+//                                        dbHelper.deleteOrder(orderId);
+//                                    }
+//                                }, 5000);
+                        finish();
+
+                    } else {
+                        Global.CustomToast(OrderChatActivity.this, saveToCart.getStatus());
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<SaveToCart> call, Throwable t) {
+                Global.dismissProgress(p);
+
+            }
+        });
+
+    }
+
+    public void onCancel(){
+        Call<CancelOrder> call = apiService.cancelOrder(orderId);
+        call.enqueue(new Callback<CancelOrder>() {
+            @Override
+            public void onResponse(Call<CancelOrder> call, Response<CancelOrder> response) {
+                if (response.isSuccessful()) {
+                    Global.dismissProgress(p);
+                    CancelOrder orderCancel = response.body();
+                    if (orderCancel.getResult().equalsIgnoreCase("Success")) {
+                        Global.CustomToast(OrderChatActivity.this, orderCancel.getStatus());
+                        String jid = PrefConnect.readString(OrderChatActivity.this, PrefConnect.TO_JID, "");
+                        getmService().xmpp.sendMessage("Customer has cancelled the order", jid, "3", getDate());
+                        PrefConnect.writeString(OrderChatActivity.this, PrefConnect.TO_JID, "");
+                        //  PrefConnect.writeString(OrderChatActivity.this, PrefConnect.ORDER_ID, "");
+
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                dbHelper.deleteOrder(orderId);
+//                                        dbHelper.deletePendingOrderHistory(orderId);
+                            }
+                        }, 4000);
+
+                        finish();
+
+                    } else {
+                        Global.CustomToast(OrderChatActivity.this, orderCancel.getStatus());
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<CancelOrder> call, Throwable t) {
+                Global.dismissProgress(p);
+
+            }
+        });
+
+    }
+
     public void BanConfirmation() {
         final BanConfirmDialog bandialog = new BanConfirmDialog();
         bandialog.setCallback(this);
@@ -855,6 +959,7 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         if (banned) {
             Process.killProcess(Process.myPid());
         } else {
+            onCancel();
             doUnbindService();
             unregisterReceiver(reciever);
             PrefConnect.writeString(OrderChatActivity.this, PrefConnect.TO_JID, "");

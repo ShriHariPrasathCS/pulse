@@ -16,6 +16,10 @@
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
@@ -28,6 +32,22 @@
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\ucrop_loader_circle_path.xml",
+        "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\anim\\ucrop_loader_circle_path.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
@@ -38,5 +58,17 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\ucrop_loader_circle_scale.xml",
+        "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\anim\\ucrop_loader_circle_scale.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\anim\\design_snackbar_out.xml"
     }
 ]

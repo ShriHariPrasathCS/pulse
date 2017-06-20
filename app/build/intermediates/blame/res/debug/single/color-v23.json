@@ -4,6 +4,10 @@
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },

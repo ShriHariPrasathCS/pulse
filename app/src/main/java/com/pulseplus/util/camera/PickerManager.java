@@ -9,7 +9,7 @@ import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
-import com.carryforme.R;
+import com.pulseplus.R;
 import com.yalantis.ucrop.UCrop;
 
 import java.io.File;

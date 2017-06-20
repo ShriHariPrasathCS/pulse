@@ -32,6 +32,10 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-hdpi\\pending_order_continue.png"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\information_icon_green.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-hdpi\\information_icon_green.png"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\navigation_drawer_help_icon.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-hdpi\\navigation_drawer_help_icon.png"
     },

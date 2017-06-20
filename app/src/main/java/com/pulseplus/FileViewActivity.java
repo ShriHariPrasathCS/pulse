@@ -131,6 +131,7 @@ public class FileViewActivity extends AppCompatActivity {
 
             @Override
             public void onError() {
+                finish();
 
             }
         });

@@ -56,6 +56,10 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-mdpi\\navigation_drawer_aboutus_icon.png"
     },
     {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\information_icon_green.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-mdpi\\information_icon_green.png"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\cart_plus.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-mdpi\\cart_plus.png"
     },
