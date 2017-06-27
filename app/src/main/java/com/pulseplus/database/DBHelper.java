@@ -249,7 +249,6 @@ public class DBHelper extends SQLiteOpenHelper {
 //        db.close();
 //    }
 
-
 //    public ArrayList<Group> getPendingOrders(String orderId) {
 //        SQLiteDatabase db = this.getReadableDatabase();
 //        ArrayList<Group> groupList = new ArrayList<>();

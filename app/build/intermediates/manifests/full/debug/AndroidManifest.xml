@@ -85,6 +85,9 @@
         <activity
             android:name="com.pulseplus.PendingOrderCart"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pulseplus.IntroScreen.IntroScreen"
+            android:screenOrientation="portrait" />
 
         <service android:name="com.pulseplus.fcm.MyFirebaseMessagingService" >
             <intent-filter>

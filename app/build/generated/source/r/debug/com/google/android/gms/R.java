@@ -13,19 +13,19 @@ public final class R {
         public static final int imageAspectRatioAdjust = 0x7f0100fe;
     }
     public static final class id {
-        public static final int adjust_height = 0x7f0d003a;
-        public static final int adjust_width = 0x7f0d003b;
-        public static final int auto = 0x7f0d0025;
-        public static final int center = 0x7f0d0027;
-        public static final int none = 0x7f0d0014;
-        public static final int normal = 0x7f0d0010;
-        public static final int progressBar = 0x7f0d0079;
-        public static final int radio = 0x7f0d005f;
-        public static final int seek_bar = 0x7f0d00ee;
-        public static final int text = 0x7f0d00ac;
-        public static final int text2 = 0x7f0d0134;
-        public static final int toolbar = 0x7f0d014c;
-        public static final int wrap_content = 0x7f0d0024;
+        public static final int adjust_height = 0x7f0e003a;
+        public static final int adjust_width = 0x7f0e003b;
+        public static final int auto = 0x7f0e0025;
+        public static final int center = 0x7f0e0027;
+        public static final int none = 0x7f0e0014;
+        public static final int normal = 0x7f0e0010;
+        public static final int progressBar = 0x7f0e0079;
+        public static final int radio = 0x7f0e005f;
+        public static final int seek_bar = 0x7f0e00f2;
+        public static final int text = 0x7f0e00b0;
+        public static final int text2 = 0x7f0e0138;
+        public static final int toolbar = 0x7f0e0150;
+        public static final int wrap_content = 0x7f0e0024;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f0b0007;

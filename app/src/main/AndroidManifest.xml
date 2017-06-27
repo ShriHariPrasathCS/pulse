@@ -64,6 +64,9 @@
         <activity
             android:name=".PendingOrderCart"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroScreen.IntroScreen"
+            android:screenOrientation="portrait" />
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>

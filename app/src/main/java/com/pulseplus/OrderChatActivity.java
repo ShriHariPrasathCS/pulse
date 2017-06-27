@@ -719,20 +719,17 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
                 closePlayer();
             }
         }
-
         //thread.stop();
-
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        onCancel();
-        dbHelper.saveToPendingOrder(orderId);
+//        onCancel();
+//        dbHelper.saveToPendingOrder(orderId);
         EventBus.getDefault().unregister(this);
         isInFront = false;
         PrefConnect.writeInteger(OrderChatActivity.this, PrefConnect.MSGCOUNT, 0);
-
     }
 
     @Override
@@ -773,7 +770,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
 //                                        dbHelper.deletePendingOrderHistory(orderId);
                                     }
                                 }, 4000);
-
                                 finish();
 
                             } else {
@@ -819,7 +815,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
 //                                    }
 //                                }, 5000);
                                 finish();
-
                             } else {
                                 Global.CustomToast(OrderChatActivity.this, saveToCart.getStatus());
                             }
@@ -836,11 +831,10 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
             }
         });
 
-
         dialog.show(getSupportFragmentManager(), "confirmation");
     }
 
-    public void onSave(){
+    public void onSave() {
 
         Call<SaveToCart> call = apiService.saveToCart(orderId);
         call.enqueue(new Callback<SaveToCart>() {
@@ -875,13 +869,11 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
             @Override
             public void onFailure(Call<SaveToCart> call, Throwable t) {
                 Global.dismissProgress(p);
-
             }
         });
-
     }
 
-    public void onCancel(){
+    public void onCancel() {
         Call<CancelOrder> call = apiService.cancelOrder(orderId);
         call.enqueue(new Callback<CancelOrder>() {
             @Override
@@ -903,9 +895,7 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
 //                                        dbHelper.deletePendingOrderHistory(orderId);
                             }
                         }, 4000);
-
                         finish();
-
                     } else {
                         Global.CustomToast(OrderChatActivity.this, orderCancel.getStatus());
                     }
@@ -915,7 +905,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
             @Override
             public void onFailure(Call<CancelOrder> call, Throwable t) {
                 Global.dismissProgress(p);
-
             }
         });
 
@@ -925,7 +914,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         final BanConfirmDialog bandialog = new BanConfirmDialog();
         bandialog.setCallback(this);
         bandialog.show(getFragmentManager(), "");
-
     }
 
     public void BlacklistConfirmation() {
@@ -938,7 +926,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
             }
         });
         BlacklistDialog.show(getFragmentManager(), "");
-
     }
 
     public void WhitelistConfirmation() {
@@ -951,7 +938,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
             }
         });
         WhitelistDialog.show(getFragmentManager(), "");
-
     }
 
 
@@ -959,7 +945,7 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
         if (banned) {
             Process.killProcess(Process.myPid());
         } else {
-            onCancel();
+      //      onCancel();
             doUnbindService();
             unregisterReceiver(reciever);
             PrefConnect.writeString(OrderChatActivity.this, PrefConnect.TO_JID, "");
@@ -1044,7 +1030,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
 
     @Override
     public void onCardAddOrRemove(String total) {
-
     }
 
     private class XmppReciever extends BroadcastReceiver {
@@ -1099,8 +1084,6 @@ public class OrderChatActivity extends AppCompatActivity implements PhotoDialog.
 //                            if (body != null && !body.equalsIgnoreCase("Order has been saved to cart"))
 //                                dbHelper.insertPendingOrder(orderId, Global.RECE, type, body, getDate());
                             dbHelper.insertOrderHistory(orderId, Global.RECE, type, body, getDate());
-
-
                         }
                     }
 

@@ -99,4 +99,8 @@
     <string name="continue_order">Continue</string>
     <string name="save_order">Save Order</string>
     <string name="select">Select</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip1">SKIP</string>
+    <string name="start">GOT IT</string>
 </resources>

@@ -92,12 +92,12 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\right_chat_green.9.png"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_effect.xml",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\button_effect.xml"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ucrop_vector_loader_animated.xml",
         "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\drawable\\ucrop_vector_loader_animated.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_effect.xml",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\button_effect.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green_out_circle_shape.xml",
@@ -144,12 +144,12 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\promotion_three.jpg"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promotion_four.jpg",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\promotion_four.jpg"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
         "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promotion_four.jpg",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\promotion_four.jpg"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\recvr.png",
@@ -172,12 +172,12 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\ic_pause_black.png"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh.xml",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\refresh.xml"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
         "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh.xml",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\refresh.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -496,12 +496,12 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\shape_dialog_bg.xml"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
         "source": "C:\\Android\\.android\\build-cache\\0e85d5fe4abdb6a2cea9f07b3a1baec0277b80ec\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh_grey.xml",
@@ -720,12 +720,12 @@
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notification_default_black.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\ic_notification_default_black.png"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\send_grey.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\send_grey.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notification_default_black.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable\\ic_notification_default_black.png"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sender_border.png",

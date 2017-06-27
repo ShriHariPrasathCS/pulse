@@ -280,10 +280,11 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Na
 
     @Override
     protected void onDestroy() {
-//        Global.CustomToast(MainActivity.this, "CLOSED");
+        Global.CustomToast(MainActivity.this, "CLOSED");
 //        String orderId = PrefConnect.readString(MainActivity.this, PrefConnect.ORDER_ID, "");
 //        dbHelper.saveToPendingOrder(orderId);
         super.onDestroy();
+        Global.CustomToast(MainActivity.this, "CLOSED");
         doUnbindService();
     }
 

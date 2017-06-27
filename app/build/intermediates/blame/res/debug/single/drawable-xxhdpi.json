@@ -36,12 +36,12 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\navigation_drawer_home_icon.png"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\dashboard_camera.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\dashboard_camera.png"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu_edit.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_edit.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\dashboard_camera.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxhdpi\\dashboard_camera.png"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash_bg.png",

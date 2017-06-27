@@ -28,12 +28,12 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxxhdpi\\navigation_drawer_promotion_icon.png"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\pending_order_continue.png",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxxhdpi\\pending_order_continue.png"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\information_icon_green.png",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxxhdpi\\information_icon_green.png"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\pending_order_continue.png",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\drawable-xxxhdpi\\pending_order_continue.png"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\navigation_drawer_order_history_icon.png",

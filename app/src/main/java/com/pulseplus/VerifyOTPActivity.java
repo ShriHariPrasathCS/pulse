@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.armor.fontlib.CButton;
 import com.armor.fontlib.CEditText;
 import com.armor.fontlib.CTextView;
+import com.pulseplus.IntroScreen.IntroScreen;
 import com.pulseplus.global.Global;
 import com.pulseplus.model.OTPVerification;
 import com.pulseplus.model.ResendOTP;
@@ -101,7 +102,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                         PrefConnect.writeString(VerifyOTPActivity.this, PrefConnect.USER_ID, details.getId());
                         PrefConnect.writeString(VerifyOTPActivity.this, PrefConnect.OTP, details.getOtp());
                         PrefConnect.writeString(VerifyOTPActivity.this, PrefConnect.OTP_VERIFY, details.getOtp_verify());
-                        Intent intent = new Intent(VerifyOTPActivity.this, MainActivity.class);
+                        Intent intent = new Intent(VerifyOTPActivity.this, IntroScreen.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     } else {
