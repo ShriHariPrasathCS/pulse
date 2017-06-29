@@ -1,5 +1,17 @@
 [
     {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\layout-v21\\notification_action.xml"
     },
@@ -14,6 +26,14 @@
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\activity_pending_orders.xml",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\layout-v21\\activity_pending_orders.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\activity_pending_orders.xml",
