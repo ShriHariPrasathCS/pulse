@@ -20,12 +20,12 @@
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast.xml",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\toast.xml"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_terms_and_condition.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\activity_terms_and_condition.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast.xml",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\toast.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_schedule_order.xml",

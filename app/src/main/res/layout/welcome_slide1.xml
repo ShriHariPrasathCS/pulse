@@ -15,7 +15,7 @@
             android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/welcome1" />
+            android:src="@drawable/help_screen_image" />
 
 
 
