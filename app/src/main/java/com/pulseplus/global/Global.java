@@ -151,7 +151,6 @@ public class Global {
         return "";
     }
 
-
     public static boolean saveImage(Context context, Uri uri, Uri toUri) {
 
         File file = new File(FilePath.getPath(context, uri));

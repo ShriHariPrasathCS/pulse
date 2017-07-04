@@ -134,7 +134,7 @@ public class OrderConfirmationActivity extends AppCompatActivity implements Cart
 
         cartAdapter = new CartListViewAdapter(OrderConfirmationActivity.this, cartlist, this);
         listView.setAdapter(cartAdapter);
-        tv_order_total.setText("Rs." + cartAdapter.getCartTotal());
+        tv_order_total.setText("" + getResources().getString(R.string.rss )+ cartAdapter.getCartTotal());
     }
 
     private void init() {
@@ -146,7 +146,7 @@ public class OrderConfirmationActivity extends AppCompatActivity implements Cart
 
     @Override
     public void onCardAddOrRemove(String total) {
-        tv_order_total.setText("Rs." + total);
+        tv_order_total.setText(getResources().getString(R.string.rss )+ total);
     }
 
     @Override

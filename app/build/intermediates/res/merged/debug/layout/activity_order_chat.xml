@@ -87,7 +87,7 @@
             <com.armor.fontlib.CButton
                 android:id="@+id/btnReorder"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:background="@drawable/button_effect"
                 android:text="@string/palce_reorder"
                 android:textSize="@dimen/twenty_sp"
@@ -97,8 +97,8 @@
             <com.armor.fontlib.CButton
                 android:id="@+id/btnNew"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/button_effect"
                 android:text="@string/palce_new_order"
                 android:textSize="@dimen/twenty_sp"
@@ -115,9 +115,9 @@
         android:layout_above="@+id/frameLayout"
         android:layout_marginTop="?attr/actionBarSize"
         android:background="@color/grey_trans"
-        android:clickable="true"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:visibility="gone" />
 
 </RelativeLayout>

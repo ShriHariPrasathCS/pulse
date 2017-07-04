@@ -23,8 +23,8 @@
     <com.armor.fontlib.CButton
         android:id="@+id/btn_Reorder"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
         android:background="@drawable/button_effect"
         android:text="@string/palce_reorder"
         android:textSize="@dimen/twenty_sp"
@@ -34,8 +34,8 @@
     <com.armor.fontlib.CButton
         android:id="@+id/btn_Neworder"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
         android:background="@drawable/button_effect"
         android:text="Place New Order"
         android:textSize="@dimen/twenty_sp"

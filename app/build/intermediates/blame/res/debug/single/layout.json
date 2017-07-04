@@ -56,12 +56,12 @@
         "source": "C:\\Android\\.android\\build-cache\\13d524cacf7d3b8e00c601f38bca8ff55f0cf68b\\output\\res\\layout\\ucrop_layout_scale_wheel.xml"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_page.xml",
-        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\fragment_home_page.xml"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\verify_page_title.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\verify_page_title.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_page.xml",
+        "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\fragment_home_page.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
@@ -136,12 +136,12 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\dialog_confirmation.xml"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\welcome_slide3.xml",
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\welcome_slide3.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\MOHAN\\.android\\build-cache\\4c2605823601ce799f2edbba562d719e3d8d4301\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_register.xml",
@@ -268,24 +268,24 @@
         "source": "F:\\Android Studio Projects\\pulse\\app\\src\\main\\res\\layout\\activity_verify_otp.xml"
     },
     {
-        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_play.xml",
-        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\layout\\notification_play.xml"
-    },
-    {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order_history_cart.xml",
         "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\layout\\activity_order_history_cart.xml"
+    },
+    {
+        "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_play.xml",
+        "source": "D:\\Android\\Workspace\\Live\\pulse\\app\\src\\main\\res\\layout\\notification_play.xml"
     },
     {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
         "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Android Studio Projects\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8833adf2eef9c94ae07b94bfa49bae56028b4730\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "D:\\Android\\Workspace\\Live\\pulse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_promotion.xml",

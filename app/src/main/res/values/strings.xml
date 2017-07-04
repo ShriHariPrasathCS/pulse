@@ -103,4 +103,6 @@
     <string name="next">NEXT</string>
     <string name="skip1">SKIP</string>
     <string name="start">GOT IT</string>
+
+    <string name="rss">\u20B9</string>
 </resources>

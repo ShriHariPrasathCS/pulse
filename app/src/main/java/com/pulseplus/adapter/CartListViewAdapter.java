@@ -83,11 +83,11 @@ public class CartListViewAdapter extends ArrayAdapter {
 
         holder.tv_medicine_name.setText(medicine_name);
         holder.tv_quantity.setText(String.valueOf(quantity[0]));
-        holder.tv_product_price.setText("Rs." + product_price);
+        holder.tv_product_price.setText(context.getResources().getString(R.string.rss) + product_price);
 
 
         total_product_price = quantity[0] * product_price;
-        holder.tv_total_product_price.setText("Rs." + total_product_price);
+        holder.tv_total_product_price.setText(context.getResources().getString(R.string.rss) + total_product_price);
 
 
         holder.img_plus.setOnClickListener(new View.OnClickListener() {
@@ -96,7 +96,7 @@ public class CartListViewAdapter extends ArrayAdapter {
                 quantity[0]++;
                 holder.tv_quantity.setText(String.valueOf(quantity[0]));
                 total_product_price = quantity[0] * product_price;
-                holder.tv_total_product_price.setText("Rs." + total_product_price);
+                holder.tv_total_product_price.setText(context.getResources().getString(R.string.rss) + total_product_price);
                 String t = String.valueOf(total_product_price);
                 String q = String.valueOf(quantity[0]);
                 cartLists.get(position).setTotal(t);
@@ -118,7 +118,7 @@ public class CartListViewAdapter extends ArrayAdapter {
                     quantity[0]--;
                     holder.tv_quantity.setText(String.valueOf(quantity[0]));
                     total_product_price = quantity[0] * product_price;
-                    holder.tv_total_product_price.setText("Rs." + total_product_price);
+                    holder.tv_total_product_price.setText(context.getResources().getString(R.string.rss) + total_product_price);
                     String t = String.valueOf(total_product_price);
                     String q = String.valueOf(quantity[0]);
                     cartLists.get(position).setTotal(t);

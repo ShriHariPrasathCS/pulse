@@ -96,6 +96,7 @@ public class ScheduleOrder extends DialogFragment {
         return currentTime;
     }
 
+
     private void setListener() {
 
         txtMorning.setOnClickListener(new View.OnClickListener() {
@@ -208,6 +209,8 @@ public class ScheduleOrder extends DialogFragment {
         imgView = (AppCompatImageView) view.findViewById(R.id.imgView);
         edtLayout = (LinearLayout) view.findViewById(R.id.edtLayout);
         btnLayout = (LinearLayout) view.findViewById(R.id.btnLayout);
+
+
     }
 
     @Override

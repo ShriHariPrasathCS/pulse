@@ -125,7 +125,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="0.60"
                     android:gravity="center"
-                    android:text=""
+                    android:text="@string/rss"
                     android:textColor="@color/grey1"
                     android:textSize="13sp" />
 
@@ -136,7 +136,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.40"
                     android:gravity="center"
-                    android:text=""
+                    android:text="@string/rss"
                     android:textColor="@color/green"
                     android:textSize="30sp" />
 
